@@ -7,3 +7,6 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<div class="container mx-auto">
+    <h1>Hello there</h1>
+</div>
