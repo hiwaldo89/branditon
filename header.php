@@ -7,6 +7,10 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div class="container mx-auto">
-    <h1>Hello there</h1>
-</div>
+<header class="branditon-header">
+    <div class="container mx-auto flex">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
+        </a>
+    </div>
+</header>
