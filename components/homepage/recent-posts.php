@@ -40,11 +40,8 @@
         <div class="relative inline-block">
             <ul class="flex justify-center">
                 <?php for ($i = 1; $i <= $totalDots; $i++) : ?>
-                    <li class="mr-3 relative text-xl"><button type="button" class="active" data-slide="<?php echo $i - 1; ?>"><?php echo $f->format($i); ?></button></li>
+                <li class="mr-3 relative text-xl"><button type="button" class="<?php if ($i == 1) : ?>active<?php endif; ?>" data-slide="<?php echo $i - 1; ?>"><?php echo $f->format($i); ?></button></li>
                 <?php endfor; ?>
-                <!-- <li class="mr-3 relative text-xl"><button type="button" data-slide="1">dos</button></li>
-                <li class="mr-3 relative text-xl"><button type="button" data-slide="2">tres</button></li>
-                <li class="relative text-xl"><button type="button" data-slide="3">cuatro</button></li> -->
             </ul>
             <a href="" class="absolute homepage-recent-posts__all text-xl">>></a>
         </div>
