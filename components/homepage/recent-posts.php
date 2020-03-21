@@ -35,10 +35,10 @@
     <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
-                <li class="mr-3"><button type="button">uno</button></li>
-                <li class="mr-3"><button type="button">dos</button></li>
-                <li class="mr-3"><button type="button">tres</button></li>
-                <li><button type="button">cuatro</button></li>
+                <li class="mr-3 relative"><button type="button" class="active">uno</button></li>
+                <li class="mr-3 relative"><button type="button">dos</button></li>
+                <li class="mr-3 relative"><button type="button">tres</button></li>
+                <li class="relative"><button type="button">cuatro</button></li>
             </ul>
             <button type="button" class="absolute homepage-recent-posts__all">>></button>
         </div>
