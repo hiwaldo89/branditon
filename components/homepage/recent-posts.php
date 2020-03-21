@@ -7,14 +7,14 @@
         </h2>
         <?php 
             $args = array(
-                'posts_per_page' => 3
+                'posts_per_page' => 12
             ); 
             $recentPostsQuery = new WP_Query($args);
         ?>
         <?php if($recentPostsQuery->have_posts()) : ?>
             <div class="flex flex-wrap homepage-recent-posts__wrapper">
                 <?php while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
-                    <div class="homepage-recent-posts__article w-full md:w-4/12">
+                    <div class="homepage-recent-posts__article w-full">
                         <div class="homepage-recent-posts__article-img">
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         </div>

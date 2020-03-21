@@ -21,7 +21,8 @@ mix
     postCss: [tailwindcss('./tailwind.config.js')]
   })
   .purgeCss({
-    content: ['**/*.php']
+    content: ['**/*.php'],
+    whitelistPatternsChildren: [/slick$/]
   });
 
 // Full API
