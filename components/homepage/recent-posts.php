@@ -15,15 +15,18 @@
             <div class="flex flex-wrap homepage-recent-posts__wrapper">
                 <?php while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
                     <div class="homepage-recent-posts__article w-full">
-                        <div class="homepage-recent-posts__article-img">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-                        </div>
-                        <div class="text-center">
-                            <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
-                            <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
-                            <?php echo $f->format(get_the_time('Y')); ?>
-                        </div>
-                        <h3 class="text-center text-3xl"><?php the_title(); ?></h3>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="homepage-recent-posts__article-img">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                            </div>
+                            <div class="text-center mt-8 mb-4">
+                                <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
+                                <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
+                                <?php echo $f->format(get_the_time('Y')); ?>
+                            </div>
+                            <h3 class="text-center text-3xl"><?php the_title(); ?></h3>
+                            <span class="homepage-recent-posts__article-deco"></span>
+                        </a>
                     </div>
                 <?php endwhile; ?>
             </div>

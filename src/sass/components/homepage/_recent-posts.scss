@@ -22,6 +22,22 @@
         object-fit: cover;
       }
     }
+    .homepage-recent-posts__article-deco {
+      position: relative;
+      width: 30px;
+      height: 1px;
+      background-color: $color--lightgray;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -15px;
+        margin: auto;
+        background-color: $color--lightgray;
+      }
+    }
   }
   .slick-slide {
     &:nth-child(odd) {
