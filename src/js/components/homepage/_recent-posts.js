@@ -14,6 +14,7 @@ if (document.querySelector('.homepage-recent-posts__wrapper')) {
   recentPostsDots.forEach(dot => {
     dot.onclick = e => {
       e.preventDefault();
+      console.log(dot.dataset.slide);
       $('.homepage-recent-posts__wrapper').slick(
         'slickGoTo',
         dot.dataset.slide
