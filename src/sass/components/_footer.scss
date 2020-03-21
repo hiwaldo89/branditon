@@ -10,5 +10,10 @@
   .branditon-footer__newsletter {
     background-color: $color--lightgray;
     color: $color--pink;
+    .branditon-footer__newsletter-input {
+      input {
+        border: solid 1px $color--pink;
+      }
+    }
   }
 }
