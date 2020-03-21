@@ -1,4 +1,5 @@
 .branditon-header {
+  border-bottom: solid 1px $color--lightgray;
   .branditon-header__logo {
     img {
       width: 180px;
@@ -18,7 +19,5 @@
         }
       }
     }
-  }
-  nav {
   }
 }

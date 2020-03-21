@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="branditon-header">
+<header class="branditon-header py-4">
     <div class="container mx-auto flex items-center">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto branditon-header__logo w-1/2 md:w-3/12">
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
@@ -20,7 +20,7 @@
                 <li><a href="">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="branditon-header__social flex md:w-3/12 justify-end">
+        <div class="branditon-header__social flex md:w-3/12 justify-end items-center">
             <a href="https://www.instagram.com/brand.it.on/" target="_blank" class="mr-4"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
             <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
         </div>
