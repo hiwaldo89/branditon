@@ -20,9 +20,24 @@
                         about
                     </a>
                 </li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">PRESS</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li>
+                    <span class="absolute inset-0">BLOG</span>
+                    <a href="" class="text-4xl">
+                        blog
+                    </a>
+                </li>
+                <li>
+                    <span class="absolute inset-0">PRESS</span>
+                    <a href="" class="text-4xl">
+                        press
+                    </a>
+                </li>
+                <li>
+                    <span class="absolute inset-0">CONTACTO</span>
+                    <a href="" class="text-4xl">
+                        contacto
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="branditon-header__social flex md:w-3/12 justify-end items-center">
