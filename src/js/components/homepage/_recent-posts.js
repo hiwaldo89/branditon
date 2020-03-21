@@ -15,6 +15,9 @@ if (document.querySelector('.homepage-recent-posts__wrapper')) {
     dot.onclick = e => {
       e.preventDefault();
       console.log(dot.dataset.slide);
+      console.log(
+        $('.homepage-recent-posts__wrapper').slick('slickCurrentSlide')
+      );
       $('.homepage-recent-posts__wrapper').slick(
         'slickGoTo',
         dot.dataset.slide
