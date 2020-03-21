@@ -20,8 +20,8 @@
                 <li><a href="">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="branditon-header__social flex md:w-3/12">
-            <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
+        <div class="branditon-header__social flex md:w-3/12 justify-end">
+            <a href="https://www.instagram.com/brand.it.on/" target="_blank" class="mr-4"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
             <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
         </div>
     </div>
