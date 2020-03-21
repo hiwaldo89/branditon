@@ -20,8 +20,8 @@
                         </div>
                         <div class="text-center">
                             <?php $f = new NumberFormatter("en", NumberFormatter::SPELLOUT); ?>
-                            <?php echo the_time('F'); ?> <?php echo $f->format(the_time('d')); ?>, <br>
-                            <?php echo $f->format(the_time('Y')); ?>
+                            <?php echo the_time('F'); ?> <?php echo $f->format((int)the_time('d')); ?>, <br>
+                            <?php echo $f->format((int)the_time('Y')); ?>
                         </div>
                     </div>
                 <?php endwhile; ?>
