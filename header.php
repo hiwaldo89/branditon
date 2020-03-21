@@ -12,17 +12,17 @@
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto branditon-header__logo w-1/2 md:w-3/12">
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
-        <nav class="mr-3 w-1/2 md:w-9/12 flex items-center">
-            <ul class="flex w-full md:w-10/12">
+        <nav class="mr-3 w-full md:w-1/2 flex items-center">
+            <ul class="flex w-full justify-between">
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">BLOG</a></li>
                 <li><a href="">PRESS</a></li>
                 <li><a href="">CONTACTO</a></li>
             </ul>
-            <div class="branditon-header__social flex w-full md:w-2/12">
-                <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
-                <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
-            </div>
         </nav>
+        <div class="branditon-header__social flex md:w-3/12">
+            <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
+            <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
+        </div>
     </div>
 </header>
