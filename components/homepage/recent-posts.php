@@ -37,6 +37,8 @@
         $totalDots = ceil($totalPosts / 3);
         $dotsCounter = 0;
     ?>
+    <?php echo $totalPosts; ?>
+    <?php echo $totalDots; ?>
     <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
