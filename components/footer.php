@@ -1,6 +1,6 @@
 <footer class="branditon-footer mt-12">
     <div class="flex flex-wrap">
-        <div class="w-full md:w-1/2 branditon-footer__social text-center py-24">
+        <div class="w-full md:w-1/2 branditon-footer__social text-center py-32 flex flex-column items-center">
             <h2 class="text-3xl mb-6">
                 Creating a brand isn't 
                 <br>
