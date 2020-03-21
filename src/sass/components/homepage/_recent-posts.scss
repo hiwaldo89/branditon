@@ -22,7 +22,7 @@
         object-fit: cover;
       }
     }
-    &:nth-child(2) {
+    &:nth-child(odd) {
       .homepage-recent-posts__article-img {
         &:after {
           padding-top: 120%;
