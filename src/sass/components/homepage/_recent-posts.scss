@@ -24,10 +24,11 @@
     }
     .homepage-recent-posts__article-deco {
       position: relative;
-      width: 30px;
-      height: 1px;
+      width: 1px;
+      height: 30px;
       background-color: $color--lightgray;
       display: block;
+      margin: auto;
       &:after {
         content: '';
         display: block;
@@ -36,8 +37,8 @@
         bottom: 0;
         left: -15px;
         margin: auto;
-        width: 1px;
-        height: 30px;
+        width: 30px;
+        height: 1px;
         background-color: $color--lightgray;
       }
     }
