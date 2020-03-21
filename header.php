@@ -9,7 +9,7 @@
 <?php wp_body_open(); ?>
 <header class="branditon-header">
     <div class="container mx-auto flex items-center">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto branditon-header__logo">
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
         <nav class="mr-3">

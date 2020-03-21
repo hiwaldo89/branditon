@@ -1,2 +1,20 @@
 .branditon-header {
+  .branditon-header__logo {
+    width: 180px;
+    max-width: 50%;
+  }
+  .branditon-header__social {
+    a {
+      &:first-child {
+        img {
+          height: 15px;
+        }
+      }
+      &:nth-child(2) {
+        img {
+          height: 18px;
+        }
+      }
+    }
+  }
 }
