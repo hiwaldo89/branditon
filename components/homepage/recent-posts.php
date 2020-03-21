@@ -35,12 +35,12 @@
     <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
-                <li class="mr-3 relative"><button type="button" class="active">uno</button></li>
-                <li class="mr-3 relative"><button type="button">dos</button></li>
-                <li class="mr-3 relative"><button type="button">tres</button></li>
-                <li class="relative"><button type="button">cuatro</button></li>
+                <li class="mr-3 relative text-xl"><button type="button" class="active" data-slide="0">uno</button></li>
+                <li class="mr-3 relative text-xl"><button type="button" data-slide="1">dos</button></li>
+                <li class="mr-3 relative text-xl"><button type="button" data-slide="2">tres</button></li>
+                <li class="relative text-xl"><button type="button" data-slide="3">cuatro</button></li>
             </ul>
-            <button type="button" class="absolute homepage-recent-posts__all">>></button>
+            <a href="" class="absolute homepage-recent-posts__all text-xl">>></a>
         </div>
     </div>
 </div>
