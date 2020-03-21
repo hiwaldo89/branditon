@@ -32,4 +32,15 @@
             </div>
         <?php endif; wp_reset_postdata(); ?>
     </div>
+    <div class="homepage-recent-posts__dots text-center">
+        <div class="relative">
+            <ul class="flex justify-center">
+                <li><button type="button">uno</button></li>
+                <li><button type="button">dos</button></li>
+                <li><button type="button">tres</button></li>
+                <li><button type="button">cuatro</button></li>
+            </ul>
+            <button type="button" class="absolute homepage-recent-posts__all">>></button>
+        </div>
+    </div>
 </div>
