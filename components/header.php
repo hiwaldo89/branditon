@@ -6,25 +6,25 @@
         <nav class="mr-3 w-full md:w-1/2 flex items-center">
             <ul class="flex w-full justify-between">
                 <li class="relative">
-                    <span class="absolute inset-0">ABOUT</span>
+                    <span class="absolute inset-0 z-10">ABOUT</span>
                     <a href="" class="text-4xl">
                         about
                     </a>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0">BLOG</span>
+                    <span class="absolute inset-0 z-10">BLOG</span>
                     <a href="" class="text-4xl">
                         blog
                     </a>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0">PRESS</span>
+                    <span class="absolute inset-0 z-10">PRESS</span>
                     <a href="" class="text-4xl">
                         press
                     </a>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0">CONTACTO</span>
+                    <span class="absolute inset-0 z-10">CONTACTO</span>
                     <a href="" class="text-4xl">
                         contacto
                     </a>
