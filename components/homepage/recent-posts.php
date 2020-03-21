@@ -32,12 +32,12 @@
             </div>
         <?php endif; wp_reset_postdata(); ?>
     </div>
-    <div class="homepage-recent-posts__dots text-center">
+    <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
-                <li><button type="button">uno</button></li>
-                <li><button type="button">dos</button></li>
-                <li><button type="button">tres</button></li>
+                <li class="mr-3"><button type="button">uno</button></li>
+                <li class="mr-3"><button type="button">dos</button></li>
+                <li class="mr-3"><button type="button">tres</button></li>
                 <li><button type="button">cuatro</button></li>
             </ul>
             <button type="button" class="absolute homepage-recent-posts__all">>></button>
