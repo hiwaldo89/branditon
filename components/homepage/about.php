@@ -9,10 +9,10 @@
                 </div>
             </div>
             <div class="w-full md:w-7/12 md:ml-auto flex homepage-about__images relative">
-                <div class="w-full md:w-8/12 relative md:absolute homepage-about__front-img md:left-0 md:top-0 md:bottom-0 margin-auto">
+                <div class="w-full md:w-7/12 relative homepage-about__front-img">
                     <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
                 </div>
-                <div class="w-full md:w-6/12 md:ml-auto homepage-about__back-img">
+                <div class="w-full md:w-6/12 md:absolute md:top-0 md:bottom-0 md:right-0 md:ml-auto md:mt-auto md:mb-auto homepage-about__back-img">
                     <img src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full">
                 </div>
             </div>
