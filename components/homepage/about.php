@@ -8,7 +8,7 @@
                     <?php echo $aboutSection['description']; ?>
                 </div>
             </div>
-            <div class="w-full md:w-7/12 md:ml-auto flex homepage-about__images">
+            <div class="w-full md:w-7/12 md:ml-auto flex homepage-about__images relative">
                 <div class="w-full md:w-7/12 relative md:absolute homepage-about__front-img md:left-0 md:top-0 md:bottom-0 margin-auto">
                     <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
                 </div>
