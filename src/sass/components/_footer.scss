@@ -2,6 +2,10 @@
   .branditon-footer__social {
     background-color: $color--pink;
     color: $color--lightgray;
+    img {
+      width: 50px;
+      height: auto;
+    }
   }
   .branditon-footer__newsletter {
     background-color: $color--lightgray;
