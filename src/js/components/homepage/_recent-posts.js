@@ -7,4 +7,9 @@ if (document.querySelector('.homepage-recent-posts__wrapper')) {
     slidesToScroll: 3,
     arrows: false
   });
+
+  const recentPostsDots = document.querySelectorAll(
+    '.homepage-recent-posts__dots li button'
+  );
+  recentPostsDots.forEach(dot => {});
 }
