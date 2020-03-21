@@ -21,6 +21,12 @@
     }
   }
   nav {
+    span {
+      width: 180px;
+      max-width: 100%;
+      margin: auto;
+      height: 1rem;
+    }
     a {
       color: $color--pink;
       font-family: 'Futura Heavy Italic';

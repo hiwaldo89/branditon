@@ -16,7 +16,7 @@
             <ul class="flex w-full justify-between">
                 <li class="relative">
                     <span class="absolute inset-0">ABOUT</span>
-                    <a href="">
+                    <a href="" class="text-4xl">
                         about
                     </a>
                 </li>
