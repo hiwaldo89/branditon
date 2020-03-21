@@ -20,7 +20,7 @@
                         </div>
                         <div class="text-center">
                             <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
-                            <?php echo the_time('F'); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
+                            <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                             <?php echo $f->format(get_the_time('Y')); ?>
                         </div>
                     </div>
