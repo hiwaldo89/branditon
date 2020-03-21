@@ -54,4 +54,15 @@
       }
     }
   }
+  .homepage-recent-posts__dots {
+    border-top: solid 1px $color--lightgray;
+    color: $color--lightgray;
+    .homepage-recent-posts__all {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      transform: translateX(calc(100% + 15px));
+    }
+  }
 }

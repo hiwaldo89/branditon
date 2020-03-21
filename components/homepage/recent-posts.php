@@ -33,7 +33,7 @@
         <?php endif; wp_reset_postdata(); ?>
     </div>
     <div class="homepage-recent-posts__dots text-center">
-        <div class="relative">
+        <div class="relative inline-block">
             <ul class="flex justify-center">
                 <li><button type="button">uno</button></li>
                 <li><button type="button">dos</button></li>
