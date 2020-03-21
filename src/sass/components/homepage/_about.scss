@@ -4,15 +4,24 @@
     font-family: 'Futura Heavy Italic';
   }
   .homepage-about__front-img {
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      border: solid 15px #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    & > div {
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: solid 15px #fff;
+      }
     }
   }
 }

@@ -10,7 +10,9 @@
             </div>
             <div class="w-full md:w-7/12 md:ml-auto homepage-about__images relative">
                 <div class="w-full md:w-6/12 homepage-about__front-img">
-                    <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
+                    <div>
+                        <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
+                    </div>
                 </div>
                 <div class="w-full md:w-7/12 homepage-about__back-img">
                     <img src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full">
