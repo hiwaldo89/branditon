@@ -11,11 +11,6 @@
             ); 
             $recentPostsQuery = new WP_Query($args);
         ?>
-        <?php if($recentPostsQuery->have_posts()) : while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
-            <div class="">
-                a new post
-            </div>
-        <?php endwhile; endif; wp_reset_postdata(); ?>
         <?php if($recentPostsQuery->have_posts()) : ?>
             <div class="flex flex-wrap homepage-recent-posts__wrapper">
                 <?php while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
