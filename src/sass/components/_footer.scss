@@ -12,7 +12,9 @@
     color: $color--pink;
     .branditon-footer__newsletter-input {
       input {
+        width: 100%;
         border: solid 1px $color--pink;
+        background: transparent;
       }
     }
   }
