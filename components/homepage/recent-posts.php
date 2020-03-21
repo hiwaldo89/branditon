@@ -35,15 +35,12 @@
     <?php 
         $totalPosts = $recentPostsQuery->found_posts; 
         $totalDots = ceil($totalPosts / 3);
-        $dotsCounter = 0;
     ?>
-    <?php echo $totalPosts; ?>
-    <?php echo $totalDots; ?>
     <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
-                <?php for ($i = 0; $i <= $totalDots; $i++) : ?>
-                    <li class="mr-3 relative text-xl"><button type="button" class="active" data-slide="<?php echo $i; ?>"><?php echo $f->format($i + 1); ?></button></li>
+                <?php for ($i = 1; $i <= $totalDots; $i++) : ?>
+                    <li class="mr-3 relative text-xl"><button type="button" class="active" data-slide="<?php echo $i - 1; ?>"><?php echo $f->format($i); ?></button></li>
                 <?php endfor; ?>
                 <!-- <li class="mr-3 relative text-xl"><button type="button" data-slide="1">dos</button></li>
                 <li class="mr-3 relative text-xl"><button type="button" data-slide="2">tres</button></li>
