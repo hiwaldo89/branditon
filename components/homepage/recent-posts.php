@@ -18,6 +18,11 @@
                         <div class="homepage-recent-posts__article-img">
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         </div>
+                        <div class="text-center">
+                            <?php $f = new NumberFormatter("en", NumberFormatter::SPELLOUT); ?>
+                            <?php echo $f->format(1432); ?>
+                            <?php the_time('Y'); ?>
+                        </div>
                     </div>
                 <?php endwhile; ?>
             </div>
