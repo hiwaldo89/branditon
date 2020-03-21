@@ -1,4 +1,12 @@
 .homepage-about {
+  .homepage-about__line-deco {
+    width: 1px;
+    height: 50px;
+    background-color: $color--lightgray;
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
   h2 {
     color: $color--pink;
     font-family: 'Futura Heavy Italic';
