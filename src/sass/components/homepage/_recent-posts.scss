@@ -1,5 +1,11 @@
 .homepage-recent-posts {
+  .homepage-recent-posts__wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
   .homepage-recent-posts__article {
+    padding-left: 15px;
+    padding-right: 15px;
     .homepage-recent-posts__article-img {
       position: relative;
       &:after {
