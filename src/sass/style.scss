@@ -15,7 +15,43 @@ Text Domain: branditon
 
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Calibre';
+  src: url('./fonts/Calibre-Medium.woff2') format('woff2'),
+    url('./fonts/Calibre-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Heavy Italic';
+  src: url('./fonts/FuturaBT-HeavyItalic.woff2') format('woff2'),
+    url('./fonts/FuturaBT-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura Heavy';
+  src: url('./fonts/FuturaBT-Heavy.woff2') format('woff2'),
+    url('./fonts/FuturaBT-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre Italic';
+  src: url('./fonts/Calibre-MediumItalic.woff2') format('woff2'),
+    url('./fonts/Calibre-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
 $color--lightgray: #83807f;
 $color--pink: #d8bdad;
+
+body {
+  font-family: 'Calibre';
+}
 
 @import 'header';

@@ -14,7 +14,12 @@
         </a>
         <nav class="mr-3 w-full md:w-1/2 flex items-center">
             <ul class="flex w-full justify-between">
-                <li><a href="">ABOUT</a></li>
+                <li class="relative">
+                    <span class="absolute inset-0">ABOUT</span>
+                    <a href="">
+                        about
+                    </a>
+                </li>
                 <li><a href="">BLOG</a></li>
                 <li><a href="">PRESS</a></li>
                 <li><a href="">CONTACTO</a></li>
