@@ -1,7 +1,9 @@
 .branditon-header {
   .branditon-header__logo {
-    width: 180px;
-    max-width: 50%;
+    img {
+      width: 180px;
+      max-width: 100%;
+    }
   }
   .branditon-header__social {
     a {
@@ -16,5 +18,7 @@
         }
       }
     }
+  }
+  nav {
   }
 }
