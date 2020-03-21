@@ -22,7 +22,7 @@
                             <?php $f = new NumberFormatter("en", NumberFormatter::SPELLOUT); ?>
                             <?php echo the_time('j'); ?>
                             <?php echo the_time('F'); ?> <?php echo $f->format(the_time('j')); ?>, <br>
-                            <?php echo $f->format('2020'); ?>
+                            <?php echo $f->format(get_the_time('Y')); ?>
                         </div>
                     </div>
                 <?php endwhile; ?>
