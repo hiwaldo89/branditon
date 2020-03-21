@@ -13,13 +13,13 @@
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
         <nav class="mr-3 w-1/2 md:w-9/12 flex items-center">
-            <ul class="flex w-full md:w-6/12">
+            <ul class="flex w-full md:w-10/12">
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">BLOG</a></li>
                 <li><a href="">PRESS</a></li>
                 <li><a href="">CONTACTO</a></li>
             </ul>
-            <div class="branditon-header__social flex w-full md:w-6/12">
+            <div class="branditon-header__social flex w-full md:w-2/12">
                 <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
                 <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
             </div>
