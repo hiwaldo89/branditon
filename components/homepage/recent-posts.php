@@ -23,6 +23,7 @@
                             <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                             <?php echo $f->format(get_the_time('Y')); ?>
                         </div>
+                        <h3 class="text-center text-3xl"><?php the_title(); ?></h3>
                     </div>
                 <?php endwhile; ?>
             </div>
