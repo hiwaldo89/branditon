@@ -63,20 +63,20 @@
       right: 0;
       margin: auto;
       transform: translateX(calc(100% + 15px));
-      button {
-        padding-top: 1rem;
-        &.active {
-          &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 30px;
-            max-width: 100%;
-            height: 4px;
-            background-color: $color--lightgray;
-          }
+    }
+    button {
+      padding-top: 1rem;
+      &.active {
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 30px;
+          max-width: 100%;
+          height: 4px;
+          background-color: $color--lightgray;
         }
       }
     }
