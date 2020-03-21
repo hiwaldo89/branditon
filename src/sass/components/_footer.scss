@@ -16,6 +16,9 @@
         border: solid 1px $color--pink;
         background: transparent;
       }
+      ::placeholder {
+        color: $color--pink;
+      }
     }
   }
 }
