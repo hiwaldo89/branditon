@@ -14,10 +14,10 @@
         </div>
         <div class="w-full md:w-1/2 branditon-footer__newsletter py-32 flex flex-col justify-center px-20">
             <h2 class="text-3xl">Únete al newsletter</h2>
-            <p>Recibe contenido exclusivo y noticias de mi blog.</p>
+            <p class="mb-6">Recibe contenido exclusivo y noticias de mi blog.</p>
             <form action="">
                 <div class="branditon-footer__newsletter-input relative">
-                    <input type="text" placeholder="Escribe tu mail">
+                    <input type="text" placeholder="Escribe tu mail" class="py-3 px-4">
                     <img src="<?php bloginfo('template_url'); ?>/img/arrow.svg" alt="flecha" class="absolute top-0 bottom-0 right-0">
                 </div>
             </form>

@@ -19,6 +19,15 @@
       ::placeholder {
         color: $color--pink;
       }
+      img {
+        width: 50px;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 10px;
+        pointer-events: none;
+      }
     }
   }
 }
