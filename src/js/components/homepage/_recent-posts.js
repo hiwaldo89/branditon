@@ -11,5 +11,10 @@ if (document.querySelector('.homepage-recent-posts__wrapper')) {
   const recentPostsDots = document.querySelectorAll(
     '.homepage-recent-posts__dots li button'
   );
-  recentPostsDots.forEach(dot => {});
+  recentPostsDots.forEach(dot => {
+    dot.onclick = e => {
+      e.preventDefault();
+      console.log(dot.dataset.slide);
+    };
+  });
 }
