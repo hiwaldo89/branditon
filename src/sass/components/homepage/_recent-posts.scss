@@ -25,7 +25,7 @@
     .homepage-recent-posts__article-deco {
       position: relative;
       width: 1px;
-      height: 30px;
+      height: 20px;
       background-color: $color--lightgray;
       display: block;
       margin: auto;
@@ -35,9 +35,9 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: -15px;
+        left: -10px;
         margin: auto;
-        width: 30px;
+        width: 20px;
         height: 1px;
         background-color: $color--lightgray;
       }
