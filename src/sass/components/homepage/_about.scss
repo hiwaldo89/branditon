@@ -7,11 +7,12 @@
     &:after {
       content: '';
       display: block;
+      position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      border: solid 5px #fff;
+      border: solid 15px #fff;
     }
   }
 }
