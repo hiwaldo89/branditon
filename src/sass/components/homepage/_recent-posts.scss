@@ -22,10 +22,14 @@
         object-fit: cover;
       }
     }
+  }
+  .slick-slide {
     &:nth-child(odd) {
-      .homepage-recent-posts__article-img {
-        &:after {
-          padding-top: 120%;
+      .homepage-recent-posts__article {
+        .homepage-recent-posts__article-img {
+          &:after {
+            padding-top: 120%;
+          }
         }
       }
     }
