@@ -19,7 +19,7 @@
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                         </div>
                         <div class="text-center">
-                            <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
+                            <?php $f = new NumberFormatter("en", NumberFormatter::SPELLOUT); ?>
                             <?php echo the_time('F'); ?> <?php echo $f->format(the_time('d')); ?>, <br>
                             <?php echo $f->format(the_time('Y')); ?>
                         </div>
