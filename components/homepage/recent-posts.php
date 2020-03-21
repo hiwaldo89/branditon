@@ -32,6 +32,7 @@
             </div>
         <?php endif; wp_reset_postdata(); ?>
     </div>
+    <?php echo $recentPostsQuery->found_posts; ?>
     <div class="homepage-recent-posts__dots text-center mt-8">
         <div class="relative inline-block">
             <ul class="flex justify-center">
