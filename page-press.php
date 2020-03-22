@@ -21,7 +21,7 @@ get_header();
                     'post_type' => 'press',
                     //'offset' => 1,
                     'posts_per_page' => 2,
-                    'paged' => ( get_query_var('paged') ) ? get_query_var('paged') : 1
+                    'paged' => (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1
                 );
                 $pressQuery = new WP_Query($pressArgs);
             ?>
@@ -32,8 +32,20 @@ get_header();
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php printf( '<div>%s</div>', get_next_posts_link( 'Older posts', $pressQuery->max_num_pages ) );
-printf( '<div>%s</div>', get_previous_posts_link( 'Newer posts', $pressQuery->max_num_pages ) ); ?>
+                    <?php
+					$total_pages = $pressQuery->max_num_pages;
+					if ($total_pages > 1) {
+						$current_page = max(1, get_query_var( 'paged' ));
+						echo paginate_links( array(
+							'base' => get_pagenum_link( 1 ) . '%_%',
+							'format' => 'page/%#%',
+							'current' => $current_page,
+							'total' => $total_pages,
+							'prev_text' => __('PREVIOUS'),
+							'next_text' => __('NEXT'),
+						) );
+					}
+					?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
