@@ -7,6 +7,7 @@
                     <?php get_template_part('components/blog/post-preview'); ?>
                 <?php endwhile; wp_reset_postdata(); ?>
             </div>
+            <?php get_template_part('components/blog/pagination'); ?>
         <?php endif; ?>
     </main>
 <?php get_footer(); ?>
