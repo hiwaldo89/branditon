@@ -1,0 +1,17 @@
+.about-branditon {
+  .about-branditon__content {
+    margin-left: -15px;
+    margin-right: -15px;
+    .about-branditon__col {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .about-branditon__img {
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 75%;
+    }
+  }
+}
