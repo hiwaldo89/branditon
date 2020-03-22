@@ -7,25 +7,25 @@
             <ul class="flex w-full justify-between">
                 <li class="relative">
                     <span class="absolute inset-0 z-10">ABOUT</span>
-                    <a href="" class="text-4xl">
+                    <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="text-4xl">
                         about
                     </a>
                 </li>
                 <li class="relative">
                     <span class="absolute inset-0 z-10">BLOG</span>
-                    <a href="" class="text-4xl">
+                    <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="text-4xl">
                         blog
                     </a>
                 </li>
                 <li class="relative">
                     <span class="absolute inset-0 z-10">PRESS</span>
-                    <a href="" class="text-4xl">
+                    <a href="<?php echo get_permalink(get_page_by_path('press')); ?>" class="text-4xl">
                         press
                     </a>
                 </li>
                 <li class="relative">
                     <span class="absolute inset-0 z-10">CONTACTO</span>
-                    <a href="" class="text-4xl">
+                    <a href="<?php echo get_permalink(get_page_by_path('contacto')); ?>" class="text-4xl">
                         contacto
                     </a>
                 </li>
