@@ -41,3 +41,6 @@ function branditon_excerpt_more( $more ) {
     return '...';
 }
 add_filter( 'excerpt_more', 'branditon_excerpt_more' );
+
+// Custom pagination
+require get_template_directory() . '/inc/branditon-pagination.php';
