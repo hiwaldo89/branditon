@@ -32,9 +32,11 @@
             <div class="branditon-article__date">
                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>.
             </div>
-            <div class="branditon-article__reading-time flex items-center">
-                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
-                Lectura de <?php the_field('reading_time'); ?>
+            <div class="branditon-article__reading-time flex items-center justify-center">
+                <div>
+                    <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
+                </div>
+                <span>Lectura de <?php the_field('reading_time'); ?></span>
             </div>
         </div>
     </div>
