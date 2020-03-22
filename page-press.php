@@ -33,7 +33,13 @@ get_header();
                     </div>
                     <?php endwhile; ?>
                     <?php $customQuery = $pressQuery; ?>
-                    <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
+                    <?php $big = 999999999; // need an unlikely integer
+ echo paginate_links( array(
+    'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+    'format' => '?paged=%#%',
+    'current' => max( 1, get_query_var('paged') ),
+    'total' => $pressQuery->max_num_pages
+) ); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
