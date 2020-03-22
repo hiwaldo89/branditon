@@ -1,0 +1,11 @@
+.contact-form {
+  background-color: #f7f6f4;
+  input,
+  textarea {
+    width: 100%;
+    border-bottom: solid 1px $color--lightgray;
+    ::placeholder {
+      color: $color--lightgray;
+    }
+  }
+}
