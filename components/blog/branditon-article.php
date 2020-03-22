@@ -3,7 +3,7 @@
         <div class="lg:w-1/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
-                <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-lg">
+                <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-lg overflow-hidden">
                     ANTERIOR
                     <span class="absolute right-0 bottom-0 text-2xl"><?php echo $prevPost->post_title; ?></span>
                 </a>
@@ -15,7 +15,7 @@
         <div class="lg:w-1/12 branditon-article__next">
             <?php $nextPost = get_next_post(); ?>
             <?php if(isset($nextPost) && strlen($nextPost->post_title) > 0) : ?>
-                <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg">
+                <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg overflow-hidden">
                     SIGUIENTE
                     <span class="absolute left-0 bottom-0 text-2xl"><?php echo $nextPost->post_title; ?></span>
                 </a>
