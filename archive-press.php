@@ -29,7 +29,8 @@
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php get_template_part('content/blog/pagination'); ?>
+                    <?php $customQuery = $pressQuery; ?>
+                    <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
