@@ -44,7 +44,9 @@
         </div>
         <div class="-mx-6 flex flex-wrap">
             <div class="w-full lg:w-7/12 px-6">
-                <?php the_content(); ?>
+                <div class="branditon-article__content text-lg">
+                    <?php the_content(); ?>
+                </div>
             </div>
             <div class="w-full lg:w-5/12 px-6"></div>
         </div>
