@@ -27,7 +27,7 @@
                                 <?php echo $f->format(get_the_time('Y')); ?>
                             </div>
                             <div class="post-preview__reading-time mt-auto">
-                                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto">
+                                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto mb-3">
                                 <p>
                                     Lectura de 
                                     <br>
