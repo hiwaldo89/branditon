@@ -5,7 +5,7 @@
         </div>
         <div class="post-preview__col w-full lg:w-1/2">
             <div class="flex flex-wrap">
-                <div class="post-preview__desc w-full lg:w-8/12">
+                <div class="post-preview__desc w-full lg:w-8/12 pt-8">
                     <div class="post-preview__cat text-center">BRANDING</div>
                     <h3 class="text-center"><?php the_title(); ?></h3>
                     <?php the_excerpt(); ?>
