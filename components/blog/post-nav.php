@@ -4,7 +4,7 @@
         <span>ANTERIOR</span>
         <h3><?php $prevPost->post_title; ?></h3>
     </div>
-    <div class="w-full lg:w-1/2 post-nav__right">
+    <div class="w-full lg:w-1/2 post-nav__next">
         <?php $nextPost = get_next_post(); ?>
         <span>SIGUIENTE</span>
         <h3><?php $nextPost->post_title; ?></h3>
