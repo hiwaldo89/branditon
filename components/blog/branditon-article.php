@@ -5,7 +5,7 @@
             <?php if(isset($prevPost)) : ?>
                 <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative">
                     ANTERIOR
-                    <span><?php echo $prevPost->post_title; ?></span>
+                    <span class="absolute right-0 bottom-0"><?php echo $prevPost->post_title; ?></span>
                 </a>
             <?php endif; ?>
         </div>
