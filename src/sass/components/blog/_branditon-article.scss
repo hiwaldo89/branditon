@@ -1,5 +1,8 @@
 .branditon-article {
   .branditon-article__prev {
     color: $color--lightgray;
+    span {
+      transform: translateY(100%);
+    }
   }
 }
