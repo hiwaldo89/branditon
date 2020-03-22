@@ -21,13 +21,13 @@
                         </div>
                     </div>
                     <div class="post-preview__meta w-full lg:w-4/12">
-                        <div class="post-preview__info-inner pt-8">
+                        <div class="post-preview__info-inner pt-8 h-full flex flex-col">
                             <div class="text-center">
                                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                                 <?php echo $f->format(get_the_time('Y')); ?>
                             </div>
-                            <div class="post-preview__reading-time">
-                                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj">
+                            <div class="post-preview__reading-time mt-auto">
+                                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto">
                                 <p>Lectura de <?php the_field('reading_time'); ?></p>
                             </div>
                         </div>
