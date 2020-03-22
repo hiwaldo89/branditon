@@ -32,16 +32,20 @@
             <div class="branditon-article__date">
                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>.
             </div>
-            <div class="branditon-article__reading-time flex items-center justify-center">
-                <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
+            <?php if(strlen(get_field('reading_time')) > 0) : ?>
+                <div class="branditon-article__reading-time flex items-center justify-center">
+                    <div>
+                        <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
+                    </div>
+                    <span>Lectura de <?php the_field('reading_time'); ?></span>
                 </div>
-                <span>Lectura de <?php the_field('reading_time'); ?></span>
+            <?php endif; ?>
+        </div>
+        <?php if(strlen(get_the_post_thumbnail_url()) > 0) : ?>
+            <div class="branditon-article__img relative mb-8">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
             </div>
-        </div>
-        <div class="branditon-article__img relative mb-8">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
-        </div>
+        <?php endif; ?>
         <div class="-mx-6 flex flex-wrap">
             <div class="w-full lg:w-8/12 px-6">
                 <div class="branditon-article__content text-lg">
