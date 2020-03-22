@@ -23,13 +23,26 @@
                 $pressQuery = new WP_Query($pressArgs);
             ?>
             <div class="flex flex-wrap -mx-4">
-                <?php if(have_posts()) : ?>
-                    <?php while(have_posts()) : the_post(); ?>
+                <?php if($pressQuery->have_posts()) : ?>
+                    <?php while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
                     <div class="w-full lg:w-4/12 px-4">
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    
+                    <?php
+					$total_pages = $pressQuery->max_num_pages;
+					if ($total_pages > 1) {
+						$current_page = max(1, get_query_var( 'paged' ));
+						echo paginate_links( array(
+							'base' => get_pagenum_link( 1 ) . '%_%',
+							'format' => 'page/%#%',
+							'current' => $current_page,
+							'total' => $total_pages,
+							'prev_text' => __('PREVIOUS'),
+							'next_text' => __('NEXT'),
+						) );
+					}
+					?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
