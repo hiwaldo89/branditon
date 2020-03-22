@@ -27,4 +27,22 @@
       border-top: solid 1px $color--lightgray;
     }
   }
+  .post-preview__more {
+    height: 20px;
+    width: 1px;
+    background-color: $color--lightgray;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: $color--lightgray;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: -10px;
+    }
+  }
 }

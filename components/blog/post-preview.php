@@ -15,6 +15,9 @@
                             <div class="text-left">
                                 <?php the_excerpt(); ?>
                             </div>
+                            <div class="text-center">
+                                <span class="post-preview__more"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="post-preview__meta w-full lg:w-4/12">
