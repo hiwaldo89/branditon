@@ -6,13 +6,15 @@
     border-bottom: solid 1px $color--lightgray;
     background-color: transparent;
     font-size: 2rem;
+    margin-bottom: 1.25rem;
   }
   ::placeholder {
     color: $color--lightgray;
   }
   button {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-bottom: solid 1px $color--lightgray;
+    color: $color--lightgray;
   }
 }
