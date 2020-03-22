@@ -1,4 +1,4 @@
-<footer class="branditon-footer mt-12">
+<footer class="branditon-footer">
     <div class="flex flex-wrap">
         <div class="w-full md:w-1/2 branditon-footer__social text-center py-32 flex flex-col items-center">
             <h2 class="text-3xl mb-6">
