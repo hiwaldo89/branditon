@@ -19,7 +19,7 @@ get_header();
             <?php 
                 $pressArgs = array(
                     'post_type' => 'press',
-                    'offset' => 1,
+                    //'offset' => 1,
                     'posts_per_page' => 2,
                     'paged' => get_query_var('paged') ? get_query_var('paged') : 1
                 );
