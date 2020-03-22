@@ -48,7 +48,7 @@ function branditon_numeric_posts_nav() {
     sort( $links );
     foreach ( (array) $links as $link ) {
         $class = $paged == $link ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $f->format($link) );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), 'test' );
     }
  
     /** Link to last page, plus ellipses if necessary */
