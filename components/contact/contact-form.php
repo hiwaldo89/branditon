@@ -7,7 +7,7 @@
                     <input type="tel" placeholder="Teléfono">
                     <input type="email" placeholder="Correo">
                     <textarea placeholder="Mensaje"></textarea>
-                    <div class="text-center">
+                    <div class="text-center mt-8">
                         <button type="button">Enviar</button>
                     </div>
                 </form>
