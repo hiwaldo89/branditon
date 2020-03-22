@@ -1,12 +1,12 @@
 <?php
-function branditon_numeric_posts_nav($custom_query) {
+function branditon_numeric_posts_nav($customQuery) {
     $f = new NumberFormatter("es", NumberFormatter::SPELLOUT);
     if( is_singular() )
         return;
     
-    if(isset($custom_query)) {
-        var_dump($custom_query);
-        $wp_query = $custom_query;
+    if(isset($customQuery)) {
+        var_dump($customQuery);
+        $wp_query = $customQuery;
     } else {
         global $wp_query;
     }
