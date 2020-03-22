@@ -5,7 +5,7 @@
                 ANTERIOR
             </a>
         </div>
-        <div class="lg:2-6/12">
+        <div class="lg:w-4/12 mx-auto">
             <h1 class="text-center mt-6 text-3xl px-12"><?php the_title(); ?></h1>
         </div>
         <div class="lg:w-3/12"></div>
