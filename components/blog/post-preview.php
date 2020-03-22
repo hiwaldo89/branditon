@@ -11,7 +11,7 @@
                         <div class="post-preview__info-inner pt-8">
                             <?php $categories = get_the_category(); ?>
                             <div class="post-preview__cat text-center text-lg mb-8 uppercase"><?php echo $categories[0]->name; ?></div>
-                            <h3 class="text-center text-2xl"><?php the_title(); ?></h3>
+                            <h3 class="text-center text-2xl mb-4"><?php the_title(); ?></h3>
                             <div class="text-left">
                                 <?php the_excerpt(); ?>
                             </div>
