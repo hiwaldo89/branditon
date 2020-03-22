@@ -2,6 +2,9 @@
   .branditon-article__prev,
   .branditon-article__next {
     color: $color--lightgray;
+    a {
+      height: 3.5rem;
+    }
     span {
       transform: translateY(100%);
       white-space: nowrap;
