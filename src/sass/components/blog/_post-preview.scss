@@ -12,4 +12,10 @@
       padding-top: 60%;
     }
   }
+  .post-preview__desc {
+    border-top: solid 1px $color--lightgray;
+  }
+  .post-preview__cat {
+    color: $color--lightgray;
+  }
 }
