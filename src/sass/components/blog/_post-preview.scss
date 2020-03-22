@@ -12,15 +12,14 @@
       padding-top: 60%;
     }
   }
-  .post-preview__desc {
+  .post-preview__desc,
+  .post-preview__meta {
     border-top: solid 1px $color--lightgray;
     padding-left: 15px;
     padding-right: 15px;
   }
   .post-preview__cat {
     color: $color--lightgray;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .post-preview__info {
     margin-left: -15px;
