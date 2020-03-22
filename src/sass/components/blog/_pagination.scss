@@ -1,0 +1,8 @@
+.blog-pagination {
+  border-top: solid 1px $color--lightgray;
+  color: $color--lightgray;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+}
