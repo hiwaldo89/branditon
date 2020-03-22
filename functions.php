@@ -33,7 +33,11 @@ function branditon_scripts() {
 add_action( 'wp_enqueue_scripts', 'branditon_scripts' );
 
 // Custom excerpt size
-function wpdocs_custom_excerpt_length( $length ) {
+function branditon_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'branditon_custom_excerpt_length', 999 );
+function branditon_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'branditon_excerpt_more' );
