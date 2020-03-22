@@ -32,6 +32,7 @@
     width: 1px;
     background-color: $color--lightgray;
     position: relative;
+    display: block;
     &:after {
       content: '';
       display: block;
