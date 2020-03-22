@@ -19,4 +19,11 @@
       height: auto;
     }
   }
+  .branditon-article__img {
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 50%;
+    }
+  }
 }

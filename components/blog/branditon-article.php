@@ -39,5 +39,8 @@
                 <span>Lectura de <?php the_field('reading_time'); ?></span>
             </div>
         </div>
+        <div class="branditon-article__img relative">
+            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
+        </div>
     </div>
 </article>
