@@ -32,8 +32,8 @@ get_header();
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php set_query_var( 'custom_query', $pressQuery ); ?>
-                    <?php get_template_part('components/blog/pagination'); ?>
+                    <?php $customQuery = $pressQuery; ?>
+                    <?php include(locate_template('components/blog/pagination.php')); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
