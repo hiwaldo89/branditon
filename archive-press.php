@@ -5,7 +5,8 @@
             <?php 
                 $recentPostArgs = array(
                     'post_type' => 'press',
-                    'posts_per_page' => 1
+                    'posts_per_page' => 1,
+                    'offset' => 1
                 );
                 $recentPost = new WP_Query($recentPostArgs);
             ?>
