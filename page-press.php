@@ -32,6 +32,7 @@ get_header();
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
+                    <?php set_query_var( 'custom_query', $pressQuery ); ?>
                     <?php get_template_part('components/blog/pagination'); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>

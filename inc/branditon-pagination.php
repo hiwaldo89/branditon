@@ -1,10 +1,14 @@
 <?php
-function branditon_numeric_posts_nav() {
+function branditon_numeric_posts_nav($custom_query) {
     $f = new NumberFormatter("es", NumberFormatter::SPELLOUT);
     if( is_singular() )
         return;
- 
-    global $wp_query;
+    
+    if(isset($custom_query)) {
+        $wp_query = $custom_query;
+    } else {
+        global $wp_query;
+    }
  
     /** Stop execution if there's only 1 page */
     if( $wp_query->max_num_pages <= 1 )
