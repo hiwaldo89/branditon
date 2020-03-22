@@ -1,6 +1,6 @@
 <article class="branditon-article">
-    <div class="flex flex-wrap branditon-article__prev">
-        <div class="lg:w-3/12 text-right ">
+    <div class="flex flex-wrap">
+        <div class="lg:w-3/12 text-right branditon-article__prev">
             <a href="">
                 ANTERIOR
             </a>
