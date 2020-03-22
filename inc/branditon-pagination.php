@@ -1,5 +1,5 @@
 <?php
-function wpbeginner_numeric_posts_nav() {
+function branditon_numeric_posts_nav() {
  
     if( is_singular() )
         return;
@@ -28,7 +28,7 @@ function wpbeginner_numeric_posts_nav() {
         $links[] = $paged + 1;
     }
  
-    echo '<div class="navigation"><ul>' . "\n";
+    echo '<div class="branditon-pagination"><ul>' . "\n";
  
     /** Previous Post Link */
     if ( get_previous_posts_link() )
@@ -62,7 +62,7 @@ function wpbeginner_numeric_posts_nav() {
  
     /** Next Post Link */
     if ( get_next_posts_link() )
-        printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+        printf( '<li>%s</li>' . "\n", get_next_posts_link('>>') );
  
     echo '</ul></div>' . "\n";
  
