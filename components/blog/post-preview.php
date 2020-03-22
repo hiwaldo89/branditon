@@ -28,7 +28,11 @@
                             </div>
                             <div class="post-preview__reading-time mt-auto">
                                 <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto">
-                                <p>Lectura de <?php the_field('reading_time'); ?></p>
+                                <p>
+                                    Lectura de 
+                                    <br>
+                                    <?php the_field('reading_time'); ?>
+                                </p>
                             </div>
                         </div>
                     </div>
