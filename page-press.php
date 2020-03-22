@@ -35,14 +35,7 @@ get_header();
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php $customQuery = $pressQuery; ?>
-                    <?php $big = 999999999; // need an unlikely integer
- echo paginate_links( array(
-    'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-    'format' => '?paged=%#%',
-    'current' => max( 1, get_query_var('paged') ),
-    'total' => $pressQuery->max_num_pages
-) ); ?>
+                    <?php the_posts_pagination(); ?>
                 <?php endif; wp_reset_postdata(); ?>
                 <?php $wp_query = $original_query; ?>
             </div>
