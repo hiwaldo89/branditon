@@ -6,8 +6,8 @@
     border-bottom: solid 1px $color--lightgray;
     background-color: transparent;
     font-size: 2rem;
-    ::placeholder {
-      color: $color--lightgray;
-    }
+  }
+  ::placeholder {
+    color: $color--lightgray;
   }
 }
