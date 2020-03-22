@@ -57,7 +57,7 @@ function branditon_numeric_posts_nav() {
             echo '<li>…</li>' . "\n";
  
         $class = $paged == $max ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $f->format($max) );
     }
  
     /** Next Post Link */
