@@ -28,7 +28,7 @@
                             </div>
                             <div class="post-preview__reading-time">
                                 <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj">
-                                <p>Lectura de <?php the_field('reading_time', get_option('page_for_posts')); ?></p>
+                                <p>Lectura de <?php the_field('reading_time'); ?></p>
                             </div>
                         </div>
                     </div>
