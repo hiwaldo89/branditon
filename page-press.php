@@ -17,6 +17,8 @@ get_header();
             <?php endwhile; endif; wp_reset_postdata(); ?>
             <h2 class="text-center text-xl py-24">Encuentra más notas</h2>
             <?php 
+                global $wp_query;
+                $original_query = $wp_query;
                 $pressArgs = array(
                     'post_type' => 'press',
                     //'offset' => 1,
@@ -24,6 +26,7 @@ get_header();
                     'paged' => get_query_var('paged') ? get_query_var('paged') : 1
                 );
                 $pressQuery = new WP_Query($pressArgs);
+                $wp_query = $pressQuery;
             ?>
             <div class="flex flex-wrap -mx-4">
                 <?php if($pressQuery->have_posts()) : ?>
@@ -41,6 +44,7 @@ get_header();
     'total' => $pressQuery->max_num_pages
 ) ); ?>
                 <?php endif; wp_reset_postdata(); ?>
+                <?php $wp_query = $original_query; ?>
             </div>
         </div>
     </main>
