@@ -10,4 +10,9 @@
   ::placeholder {
     color: $color--lightgray;
   }
+  button {
+    display: inline-block;
+    font-size: 1.8rem;
+    border-bottom: solid 1px $color--lightgray;
+  }
 }

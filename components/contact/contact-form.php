@@ -1,4 +1,4 @@
-<div class="contact-form pt-12 pb-24">
+<div class="contact-form pt-20 pb-24">
     <div class="container mx-auto">
         <div class="flex flex-wrap">
             <div class="w-full lg:w-8/12 mx-auto">
