@@ -7,7 +7,7 @@
             <div class="flex flex-wrap">
                 <div class="post-preview__desc w-full lg:w-8/12 pt-8">
                     <div class="post-preview__cat text-center text-lg mb-8">BRANDING</div>
-                    <h3 class="text-center text-xl"><?php the_title(); ?></h3>
+                    <h3 class="text-center text-2xl"><?php the_title(); ?></h3>
                     <?php the_excerpt(); ?>
                 </div>
             </div>
