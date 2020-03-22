@@ -1,5 +1,6 @@
+<?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <article class="branditon-article">
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap mt-12">
         <div class="lg:w-1/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
@@ -20,6 +21,20 @@
                     <span class="absolute left-0 top-0 text-2xl"><?php echo $nextPost->post_title; ?></span>
                 </a>
             <?php endif; ?>
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="branditon-article__meta text-center">
+            <div class="branditon-article__cat uppercase text-xl">
+                <?php $categories = get_the_category(); ?>
+                <?php echo $categories[0]->name; ?>
+            </div>
+            <div class="branditon-article__date">
+                <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>
+            </div>
+            <div class="branditon-article__reading-time">
+                Lectura de <?php the_field('reading_time'); ?>
+            </div>
         </div>
     </div>
 </article>
