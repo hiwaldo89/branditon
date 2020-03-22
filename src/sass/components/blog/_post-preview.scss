@@ -14,8 +14,16 @@
   }
   .post-preview__desc {
     border-top: solid 1px $color--lightgray;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .post-preview__cat {
     color: $color--lightgray;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .post-preview__info {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
