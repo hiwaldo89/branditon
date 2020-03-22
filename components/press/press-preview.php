@@ -1,7 +1,7 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="press-preview mb-8">
     <a href="<?php the_permalink(); ?>">
-        <div class="press-preview__img relative">
+        <div class="press-preview__img relative mb-8">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
         </div>
         <div class="press-preview__content text-center px-4">
