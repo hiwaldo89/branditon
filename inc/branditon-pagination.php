@@ -6,7 +6,6 @@ function branditon_numeric_posts_nav($customQuery) {
     //     return;
     
     if(isset($customQuery)) {
-        var_dump($customQuery);
         $wp_query = $customQuery;
     } else {
         global $wp_query;
