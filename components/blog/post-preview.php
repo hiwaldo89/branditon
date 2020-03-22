@@ -1,3 +1,4 @@
+<?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="post-preview mb-12">
     <article>
         <a href="<?php the_permalink(); ?>" class="flex flex-wrap">
@@ -14,7 +15,12 @@
                             <?php the_excerpt(); ?>
                         </div>
                     </div>
-                    <div class="post-preview__meta"></div>
+                    <div class="post-preview__meta w-full lg:w-4/12 pt-8">
+                        <div class="text-center">
+                            <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
+                            <?php echo $f->format(get_the_time('Y')); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </a>
