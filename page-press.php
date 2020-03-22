@@ -32,8 +32,8 @@ get_header();
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php printf( '<div>%s</div>', get_next_posts_link( 'Older posts', $my_query->max_num_pages ) );
-printf( '<div>%s</div>', get_previous_posts_link( 'Newer posts', $my_query->max_num_pages ) ); ?>
+                    <?php printf( '<div>%s</div>', get_next_posts_link( 'Older posts', $pressQuery->max_num_pages ) );
+printf( '<div>%s</div>', get_previous_posts_link( 'Newer posts', $pressQuery->max_num_pages ) ); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
