@@ -7,8 +7,8 @@
             </div>
             <div class="post-preview__col w-full lg:w-1/2">
                 <div class="flex flex-wrap post-preview__info">
-                    <div class="post-preview__desc w-full lg:w-8/12 pt-8">
-                        <div class="post-preview__info-inner">
+                    <div class="post-preview__desc w-full lg:w-8/12">
+                        <div class="post-preview__info-inner pt-8">
                             <?php $categories = get_the_category(); ?>
                             <div class="post-preview__cat text-center text-lg mb-8 uppercase"><?php echo $categories[0]->name; ?></div>
                             <h3 class="text-center text-2xl"><?php the_title(); ?></h3>
@@ -17,8 +17,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-preview__meta w-full lg:w-4/12 pt-8">
-                        <div class="post-preview__info-inner">
+                    <div class="post-preview__meta w-full lg:w-4/12">
+                        <div class="post-preview__info-inner pt-8">
                             <div class="text-center">
                                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                                 <?php echo $f->format(get_the_time('Y')); ?>
