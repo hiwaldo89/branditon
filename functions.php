@@ -31,3 +31,9 @@ function branditon_scripts() {
     wp_enqueue_script( 'branditon-scripts', get_template_directory_uri() . '/dist/app.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'branditon_scripts' );
+
+// Custom excerpt size
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
