@@ -1,12 +1,12 @@
 <div class="post-nav flex flex-wrap">
-    <div class="w-full lg:w-1/2 post-nav__prev text-right">
-        <?php $prevPost = get_previous_post(); ?>
+    <?php $prevPost = get_previous_post(); ?>
+    <a href="<?php echo get_permalink($prevPost->ID); ?>" class="w-full lg:w-1/2 post-nav__prev text-right">
         <span>ANTERIOR</span>
         <h3><?php echo $prevPost->post_title; ?></h3>
-    </div>
-    <div class="w-full lg:w-1/2 post-nav__next">
-        <?php $nextPost = get_next_post(); ?>
+    </a>
+    <?php $nextPost = get_next_post(); ?>
+    <a href="<?php echo get_permalink($nextPost->ID); ?>" class="w-full lg:w-1/2 post-nav__next">
         <span>SIGUIENTE</span>
         <h3><?php echo $nextPost->post_title; ?></h3>
-    </div>
+    </a>
 </div>
