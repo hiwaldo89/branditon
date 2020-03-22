@@ -9,15 +9,17 @@
       padding-top: 0.5rem;
       margin: 0 0.5rem;
       position: relative;
-      &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: $color--lightgray;
+      &.active {
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: $color--lightgray;
+        }
       }
     }
   }
