@@ -1,4 +1,4 @@
-<div class="container mx-auto about-branditon py-12">
+<div class="container mx-auto about-branditon py-20">
     <h2 class="text-center text-3xl mb-16">Acerca de Brand it on</h2>
     <div class="flex about-branditon__content mb-12">
         <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl">
