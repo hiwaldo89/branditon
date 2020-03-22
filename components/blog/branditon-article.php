@@ -14,6 +14,7 @@
         </div>
         <div class="lg:w-1/12 branditon-article__next">
             <?php $nextPost = get_next_post(); ?>
+            <?php var_dump($nextPost); ?>
             <?php if(isset($nextPost)) : ?>
                 <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg">
                     SIGUIENTE
