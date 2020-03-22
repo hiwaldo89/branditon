@@ -7,4 +7,9 @@
         <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook-circle.svg" alt="facebook"></a>
         <a href="mailto:fernanda@branditon.com.mx"><img src="<?php bloginfo('template_url'); ?>/img/email-circle.svg" alt="email"></a>
     </div>
+    <p class="text-3xl">
+        o llena la siguiente forma y me pondré en 
+        <br>
+        contacto contigo:
+    </p>
 </div>
