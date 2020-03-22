@@ -1,0 +1,15 @@
+.post-preview {
+  margin-left: -15px;
+  margin-right: -15px;
+  .post-preview__col {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .post-preview__img {
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 60%;
+    }
+  }
+}
