@@ -24,9 +24,9 @@ get_header();
                 );
                 $pressQuery = new WP_Query($pressArgs);
             ?>
-            <div class="flex flex-wrap -mx-6">
+            <div class="flex flex-wrap -mx-4">
                 <?php if($pressQuery->have_posts()) : while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
-                    <div class="w-full lg:w-4/12 px-6">
+                    <div class="w-full lg:w-4/12 px-4">
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                 <?php endwhile; endif; wp_reset_postdata(); ?>
