@@ -48,7 +48,7 @@ function branditon_numeric_posts_nav() {
     sort( $links );
     foreach ( (array) $links as $link ) {
         $class = $paged == $link ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), 'test' );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $f->format($link) );
     }
  
     /** Link to last page, plus ellipses if necessary */
@@ -57,7 +57,7 @@ function branditon_numeric_posts_nav() {
             echo '<li>…</li>' . "\n";
  
         $class = $paged == $max ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $f->format($max) );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), 'test' );
     }
  
     /** Next Post Link */
