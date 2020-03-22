@@ -1,0 +1,10 @@
+.post-nav {
+  .post-nav__prev,
+  .post-nav__next {
+    border-top: solid 1px $color--lightgray;
+    margin-top: -1px;
+  }
+  .post-nav__next {
+    border-left: solid 1px $color--lightgray;
+  }
+}
