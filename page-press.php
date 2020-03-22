@@ -24,9 +24,13 @@ get_header();
                 );
                 $pressQuery = new WP_Query($pressArgs);
             ?>
-            <?php if($pressQuery->have_posts()) : while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
-                <?php get_template_part('components/press/press-preview'); ?>
-            <?php endwhile; endif; wp_reset_postdata(); ?>
+            <div class="flex flex-wrap -mx-8">
+                <?php if($pressQuery->have_posts()) : while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
+                    <div class="w-full lg:w-4/12 px-8">
+                        <?php get_template_part('components/press/press-preview'); ?>
+                    </div>
+                <?php endwhile; endif; wp_reset_postdata(); ?>
+            </div>
         </div>
     </main>
 <?php get_footer(); ?>
