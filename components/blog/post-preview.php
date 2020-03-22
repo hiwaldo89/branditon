@@ -8,7 +8,7 @@
                 <div class="flex flex-wrap">
                     <div class="post-preview__desc w-full lg:w-8/12 pt-8">
                         <?php $categories = get_the_category(); ?>
-                        <div class="post-preview__cat text-center text-lg mb-8"><?php var_dump($categories); ?></div>
+                        <div class="post-preview__cat text-center text-lg mb-8"><?php echo $categories[0]->name; ?></div>
                         <h3 class="text-center text-2xl"><?php the_title(); ?></h3>
                         <div class="text-left">
                             <?php the_excerpt(); ?>
