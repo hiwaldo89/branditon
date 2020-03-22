@@ -6,7 +6,7 @@
                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
             </div>
             <div class="post-preview__col w-full lg:w-1/2">
-                <div class="flex flex-wrap post-preview__info">
+                <div class="flex flex-wrap post-preview__info h-full">
                     <div class="post-preview__desc w-full lg:w-8/12">
                         <div class="post-preview__info-inner pt-8 flex flex-col">
                             <?php $categories = get_the_category(); ?>
