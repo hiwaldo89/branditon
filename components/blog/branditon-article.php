@@ -52,7 +52,7 @@
                     <?php the_content(); ?>
                 </div>
             </div>
-            <?php if(sizeof(get_field('gallery')) > 0) : ?>
+            <?php if(get_field('gallery')) : ?>
                 <div class="w-full lg:w-4/12 px-6">
                     <?php foreach(get_field('gallery') as $image) : ?>
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
