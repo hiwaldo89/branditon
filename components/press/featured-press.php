@@ -7,7 +7,6 @@
         <div class="w-full lg:w-4/12 featured-press__content text-center">
             <?php 
                 $mediaPublication = get_the_terms(get_the_ID(), 'publication_media'); 
-                var_dump($mediaPublication);
             ?>
             <span class="featured-press__cat"><?php echo $mediaPublication[0]->name; ?></span>
             <h2 class="text-2xl"><?php the_title(); ?></h2>
