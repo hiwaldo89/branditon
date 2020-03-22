@@ -1,6 +1,6 @@
 <?php
 function branditon_numeric_posts_nav() {
- 
+    $f = new NumberFormatter("es", NumberFormatter::SPELLOUT);
     if( is_singular() )
         return;
  
@@ -32,13 +32,13 @@ function branditon_numeric_posts_nav() {
  
     /** Previous Post Link */
     if ( get_previous_posts_link() )
-        printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
+        printf( '<li>%s</li>' . "\n", get_previous_posts_link('<<') );
  
     /** Link to first page, plus ellipses if necessary */
     if ( ! in_array( 1, $links ) ) {
         $class = 1 == $paged ? ' class="active"' : '';
  
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), 'uno' );
  
         if ( ! in_array( 2, $links ) )
             echo '<li>…</li>';
@@ -48,7 +48,7 @@ function branditon_numeric_posts_nav() {
     sort( $links );
     foreach ( (array) $links as $link ) {
         $class = $paged == $link ? ' class="active"' : '';
-        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $f->format($link) );
     }
  
     /** Link to last page, plus ellipses if necessary */
