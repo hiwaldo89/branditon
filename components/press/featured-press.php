@@ -6,9 +6,7 @@
         </div>
         <div class="w-full lg:w-4/12 featured-press__content text-center">
             <?php 
-                $mediaPublication = get_taxonomies(array(
-                    'name' => array('publication_media')
-                )); 
+                $mediaPublication = get_terms('publication_media'); 
                 var_dump($mediaPublication);
             ?>
             <h2 class="text-2xl"><?php the_title(); ?></h2>
