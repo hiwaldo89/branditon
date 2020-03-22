@@ -42,5 +42,11 @@
         <div class="branditon-article__img relative">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
         </div>
+        <div class="-mx-6 flex flex-wrap">
+            <div class="w-full lg:w-7/12 px-6">
+                <?php the_content(); ?>
+            </div>
+            <div class="w-full lg:w-5/12 px-6"></div>
+        </div>
     </div>
 </article>
