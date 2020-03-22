@@ -20,7 +20,7 @@ get_header();
                 $pressArgs = array(
                     'post_type' => 'press',
                     'offset' => 1,
-                    'posts_per_page' => 6
+                    'posts_per_page' => 2
                 );
                 $pressQuery = new WP_Query($pressArgs);
             ?>
