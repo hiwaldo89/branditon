@@ -29,10 +29,10 @@
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
-                    <?php $customQuery = $pressQuery; ?>
-                    <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
+            <?php $customQuery = $pressQuery; ?>
+            <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
         </div>
     </main>
 <?php get_footer(); ?>
