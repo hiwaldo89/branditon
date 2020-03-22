@@ -1,0 +1,9 @@
+.press-preview {
+  .press-preview__img {
+    &:after  {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+}

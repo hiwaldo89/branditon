@@ -1,0 +1,9 @@
+.featured-press {
+  .featured-press__img {
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 50%;
+    }
+  }
+}
