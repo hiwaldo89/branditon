@@ -31,8 +31,8 @@
                     <?php endwhile; ?>
                 <?php endif; wp_reset_postdata(); ?>
             </div>
-            <?php $customQuery = $pressQuery; ?>
-            <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
         </div>
+        <?php $customQuery = $pressQuery; ?>
+        <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
     </main>
 <?php get_footer(); ?>
