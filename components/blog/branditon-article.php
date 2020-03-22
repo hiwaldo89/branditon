@@ -48,7 +48,11 @@
                     <?php the_content(); ?>
                 </div>
             </div>
-            <div class="w-full lg:w-5/12 px-6"></div>
+            <div class="w-full lg:w-5/12 px-6">
+                <?php foreach(get_field('gallery') as $image) : ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </article>
