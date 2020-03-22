@@ -3,9 +3,9 @@
         <div class="lg:w-3/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost)) : ?>
-                <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-xl">
+                <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-lg">
                     ANTERIOR
-                    <span class="absolute right-0 bottom-0 text-lg"><?php echo $prevPost->post_title; ?></span>
+                    <span class="absolute right-0 bottom-0 text-2xl"><?php echo $prevPost->post_title; ?></span>
                 </a>
             <?php endif; ?>
         </div>
