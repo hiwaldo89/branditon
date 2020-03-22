@@ -25,11 +25,14 @@ get_header();
                 $pressQuery = new WP_Query($pressArgs);
             ?>
             <div class="flex flex-wrap -mx-4">
-                <?php if($pressQuery->have_posts()) : while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
+                <?php if($pressQuery->have_posts()) : ?>
+                    <?php while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
                     <div class="w-full lg:w-4/12 px-4">
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
-                <?php endwhile; endif; wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
+                    <?php get_template_part('components/blog/pagination'); ?>
+                <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
     </main>
