@@ -12,6 +12,14 @@
         <div class="lg:w-4/12 mx-auto">
             <h1 class="text-center mt-6 text-3xl px-12"><?php the_title(); ?></h1>
         </div>
-        <div class="lg:w-1/12"></div>
+        <div class="lg:w-1/12 branditon-article__next">
+            <?php $nextPost = get_next_post(); ?>
+            <?php if(isset($nextPost)) : ?>
+                <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg">
+                    SIGUIENTE
+                    <span class="absolute left-0 bottom-0 text-2xl"><?php echo $nextPost->post_title; ?></span>
+                </a>
+            <?php endif; ?>
+        </div>
     </div>
 </article>

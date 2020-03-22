@@ -1,8 +1,10 @@
 .branditon-article {
-  .branditon-article__prev {
+  .branditon-article__prev,
+  .branditon-article__next {
     color: $color--lightgray;
     span {
       transform: translateY(100%);
+      white-space: nowrap;
     }
   }
 }
