@@ -2,6 +2,7 @@
     <div class="flex flex-wrap">
         <div class="lg:w-3/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
+            <?php var_dump($prevPost); ?>
             <?php if(isset($prevPost)) : ?>
                 <a href="<?php echo $prevPost->url; ?>">
                     ANTERIOR
