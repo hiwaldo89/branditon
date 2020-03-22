@@ -47,16 +47,18 @@
             </div>
         <?php endif; ?>
         <div class="-mx-6 flex flex-wrap">
-            <div class="w-full lg:w-8/12 px-6">
+            <div class="w-full lg:w-8/12 px-6 mx-auto">
                 <div class="branditon-article__content text-lg">
                     <?php the_content(); ?>
                 </div>
             </div>
-            <div class="w-full lg:w-4/12 px-6">
-                <?php foreach(get_field('gallery') as $image) : ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
-                <?php endforeach; ?>
-            </div>
+            <?php if(sizeof(get_field('gallery')) > 0) : ?>
+                <div class="w-full lg:w-4/12 px-6">
+                    <?php foreach(get_field('gallery') as $image) : ?>
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </article>
