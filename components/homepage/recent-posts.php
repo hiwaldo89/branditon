@@ -20,11 +20,11 @@
                             <div class="homepage-recent-posts__article-img">
                                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                             </div>
-                            <div class="text-center mt-8 mb-4">
+                            <div class="text-center mt-8 mb-4 tracking-widest">
                                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                                 <?php echo $f->format(get_the_time('Y')); ?>
                             </div>
-                            <h3 class="text-center text-3xl mb-6"><?php the_title(); ?></h3>
+                            <h3 class="text-center text-2xl mb-6 font-secondary tracking-widest"><?php the_title(); ?></h3>
                             <span class="homepage-recent-posts__article-deco"></span>
                         </a>
                     </div>
