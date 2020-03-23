@@ -21,7 +21,7 @@
                 </li>
                 <li class="relative">
                     <span class="absolute inset-0 z-10">PRESS</span>
-                    <a href="<?php echo get_permalink(get_page_by_path('press')); ?>" class="text-4xl<?php if($pageSlug == 'press') : ?> active<?php endif; ?>">
+                    <a href="<?php echo get_permalink(get_page_by_path('press')); ?>" class="text-4xl<?php if($pageSlug == 'press' || is_post_type_archive('press')) : ?> active<?php endif; ?>">
                         press
                     </a>
                 </li>
