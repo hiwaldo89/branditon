@@ -4,13 +4,15 @@
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
                     <div class="flex flex-wrap contact-form__subject mb-16">
-                        <label class="w-full lg:w-3/12 tracking-widest">¡DI HOLA!
+                        <label class="w-full lg:w-3/12 tracking-widest">
+                            <span>¡DI HOLA!</span>
                             <input type="radio" name="subject" checked="checked">
-                            <span></span>
+                            <span class="radio"></span>
                         </label>
-                        <label class="w-full lg:w-3/12 tracking-widest">¿DUDAS?
+                        <label class="w-full lg:w-3/12 tracking-widest">
+                            <span>¿DUDAS?
                             <input type="radio" name="subject">
-                            <span></span>
+                            <span class="radio"></span>
                         </label>
                     </div>
                     <input type="text" placeholder="Nombre">
