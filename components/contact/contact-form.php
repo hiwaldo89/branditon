@@ -3,7 +3,7 @@
         <div class="flex flex-wrap">
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
-                    <div class="flex flex-wrap contact-form__subject">
+                    <div class="flex flex-wrap contact-form__subject mb-16">
                         <label class="w-full lg:w-3/12 tracking-widest">¡DI HOLA!
                             <input type="radio" name="subject" checked="checked">
                             <span class="checkmark"></span>
@@ -18,7 +18,7 @@
                     <input type="email" placeholder="Correo">
                     <textarea placeholder="Mensaje"></textarea>
                     <div class="text-center mt-8">
-                        <button type="button">Enviar</button>
+                        <button type="button" class="px-4">ENVIAR</button>
                     </div>
                 </form>
             </div>
