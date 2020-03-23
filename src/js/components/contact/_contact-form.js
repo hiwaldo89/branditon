@@ -28,7 +28,9 @@ if (contactForm) {
         contactFormMessage.innerHTML = e;
       })
       .then(() => {
-        animateCSS('.contact-form__message', 'fadeInUp');
+        animateCSS('.contact-form__message', 'fadeInUp', function() {
+          contactFormMessage.classList.remove('opacity-0');
+        });
       });
   };
 }
