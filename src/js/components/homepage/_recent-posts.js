@@ -5,7 +5,16 @@ if (document.querySelector('.homepage-recent-posts__wrapper')) {
   $('.homepage-recent-posts__wrapper').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
-    arrows: false
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   const recentPostsDots = document.querySelectorAll(
