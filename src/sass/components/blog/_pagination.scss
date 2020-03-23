@@ -9,7 +9,9 @@
       padding-top: 0.5rem;
       margin: 0 0.5rem;
       position: relative;
+      letter-spacing: 0.1em;
       &.active {
+        font-family: 'Calibre Italic';
         &:before {
           content: '';
           display: block;
