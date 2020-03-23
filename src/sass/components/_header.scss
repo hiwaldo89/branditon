@@ -34,7 +34,8 @@
       font-family: 'Futura Heavy Italic';
       opacity: 0;
       transition: all 0.3s ease-in-out;
-      &:hover {
+      &:hover,
+      &.active {
         opacity: 1;
       }
     }
