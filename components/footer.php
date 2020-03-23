@@ -15,12 +15,15 @@
         <div class="w-full md:w-1/2 branditon-footer__newsletter py-32 flex flex-col justify-center px-12 md:px-20">
             <h2 class="text-2xl font-secondary tracking-widest mb-4">Únete al newsletter</h2>
             <p class="mb-6 text-lg">Recibe contenido exclusivo y noticias de mi blog.</p>
-            <form action="">
+            <form action="<?php bloginfo('template_url'); ?>/inc/branditon-mailchimp.php">
                 <div class="branditon-footer__newsletter-input relative">
                     <input type="text" placeholder="Escribe tu mail" class="py-3 px-4" name="email">
                     <button type="submit" class="absolute top-0 bottom-0 right-0 border-0 outline-none">
                         <img src="<?php bloginfo('template_url'); ?>/img/arrow.svg" alt="flecha">
                     </button>
+                    <div class="branditon-footer__newsletter-message opacity-0">
+                        <span>Newsletter message</span>
+                    </div>
                 </div>
             </form>
         </div>
