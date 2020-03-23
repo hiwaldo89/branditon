@@ -1,7 +1,7 @@
 <div class="container mx-auto about-branditon py-20 px-4 md:px-0">
     <h2 class="text-center text-2xl mt-12 mb-12 pb-20 font-secondary tracking-widest">Acerca de Brand it on</h2>
     <div class="flex flex-wrap about-branditon__content mb-24">
-        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl">
+        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl mb-8 lg:mb-0">
             <?php the_field('left_column'); ?>
         </div>
         <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl">
