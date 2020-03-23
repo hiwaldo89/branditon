@@ -17,9 +17,19 @@ mailchimpForm.onsubmit = e => {
     url: mailchimpForm.action,
     data: new FormData(mailchimpForm)
   })
-    .then(res => console.log(res))
+    .then(res => {
+      if (res.data == 'error') {
+        mailchimpFormMessage.querySelector('span').innerHTML =
+          'Ocurrió un error. Intenta de nuevo.';
+      } else {
+        mailchimpFormMessage.querySelector('span').innerHTML =
+          '¡Gracias por suscribirte!';
+      }
+    })
     .catch(e => {
       console.log(e);
+      mailchimpFormMessage.querySelector('span').innerHTML =
+        'Ocurrió un error. Intenta de nuevo.';
     })
     .then(() => {
       animateCSS(
