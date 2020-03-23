@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="container mx-auto">
-        <div class="branditon-article__meta text-center mb-12">
+        <div class="branditon-article__meta text-center mb-16">
             <div class="branditon-article__cat uppercase text-xl tracking-widest">
                 <?php $categories = get_the_category(); ?>
                 <?php echo $categories[0]->name; ?>
