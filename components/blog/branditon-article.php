@@ -1,7 +1,7 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <article class="branditon-article">
     <div class="flex flex-wrap pt-20 mb-12">
-        <div class="w-1/2 lg:w-1/12 text-right branditon-article__prev order-0">
+        <div class="w-1/2 lg:w-1/12 text-right branditon-article__prev order-0 hidden lg:block">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
                 <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-lg overflow-hidden tracking-widest">
@@ -13,7 +13,7 @@
         <div class="lg:w-4/12 mx-auto order-2 lg:order-1">
             <h1 class="text-center mt-6 text-3xl px-12 font-secondary tracking-widest"><?php the_title(); ?></h1>
         </div>
-        <div class="w-1/2 lg:w-1/12 branditon-article__next order-1 lg:order-2">
+        <div class="w-1/2 lg:w-1/12 branditon-article__next order-1 lg:order-2 hidden lg:block">
             <?php $nextPost = get_next_post(); ?>
             <?php if($nextPost != '') : ?>
                 <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg overflow-hidden tracking-widest">
