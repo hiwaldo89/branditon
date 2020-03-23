@@ -22,7 +22,7 @@ mix
   })
   .purgeCss({
     content: ['**/*.php'],
-    whitelistPatterns: [/slick/]
+    whitelistPatterns: [/slick/, /main-navigation--open/]
   });
 
 // Full API
