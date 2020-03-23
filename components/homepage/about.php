@@ -8,7 +8,7 @@
                 <div class="text-justify text-xl">
                     <?php echo $aboutSection['description']; ?>
                 </div>
-                <a class="mt-4" href="<?php echo get_permalink(get_page_by_path('about')); ?>">
+                <a class="pt-8 inline-block" href="<?php echo get_permalink(get_page_by_path('about')); ?>">
                     <span class="homepage-about__cross-deco"></span>
                 </a>
             </div>

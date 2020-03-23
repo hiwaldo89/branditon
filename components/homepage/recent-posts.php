@@ -1,7 +1,7 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="homepage-recent-posts py-12">
     <div class="container mx-auto">
-        <h2 class="text-3xl text-center">
+        <h2 class="text-3xl text-center font-secondary tracking-widest">
             Últimas entradas 
             <br> 
             del blog
