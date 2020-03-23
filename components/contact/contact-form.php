@@ -18,7 +18,7 @@
                     <input type="email" placeholder="Correo">
                     <textarea placeholder="Mensaje"></textarea>
                     <div class="text-center mt-8">
-                        <button type="button" class="px-4">ENVIAR</button>
+                        <button type="button" class="px-4 tracking-widest">ENVIAR</button>
                     </div>
                 </form>
             </div>
