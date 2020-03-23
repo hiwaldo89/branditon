@@ -26,11 +26,15 @@
     min-height: 100vh;
     top: 0;
     left: 0;
+    z-index: 1200;
+    transform: translateX(-100%);
     @media (min-width: 768px) {
       position: relative;
       top: auto;
       left: auto;
       min-height: auto;
+      z-index: 0;
+      transform: translateX(0);
     }
     span {
       width: 180px;
