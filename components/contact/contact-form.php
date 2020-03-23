@@ -10,7 +10,7 @@
                             <span class="radio"></span>
                         </label>
                         <label class="w-full lg:w-3/12 tracking-widest">
-                            <span>¿DUDAS?
+                            <span>¿DUDAS?</span>
                             <input type="radio" name="subject">
                             <span class="radio"></span>
                         </label>
