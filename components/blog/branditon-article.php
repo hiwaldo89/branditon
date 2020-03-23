@@ -23,7 +23,7 @@
             <?php endif; ?>
         </div>
     </div>
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4 lg:px-0">
         <div class="branditon-article__meta text-center mb-16">
             <div class="branditon-article__cat uppercase text-xl tracking-widest">
                 <?php $categories = get_the_category(); ?>
@@ -46,8 +46,8 @@
                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
             </div>
         <?php endif; ?>
-        <div class="-mx-6 flex flex-wrap">
-            <div class="w-full lg:w-7/12 px-6">
+        <div class="lg:-mx-6 flex flex-wrap">
+            <div class="w-full lg:w-7/12 lg:px-6">
                 <div class="branditon-article__content text-lg">
                     <?php the_content(); ?>
                 </div>
