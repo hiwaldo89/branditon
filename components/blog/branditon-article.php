@@ -1,6 +1,6 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <article class="branditon-article">
-    <div class="flex flex-wrap pt-20">
+    <div class="flex flex-wrap pt-20 mb-12">
         <div class="lg:w-1/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
@@ -24,12 +24,12 @@
         </div>
     </div>
     <div class="container mx-auto">
-        <div class="branditon-article__meta text-center mb-8">
+        <div class="branditon-article__meta text-center mb-12">
             <div class="branditon-article__cat uppercase text-xl tracking-widest">
                 <?php $categories = get_the_category(); ?>
                 <?php echo $categories[0]->name; ?>
             </div>
-            <div class="branditon-article__date tracking-widest">
+            <div class="branditon-article__date tracking-widest mb-8">
                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>.
             </div>
             <?php if(strlen(get_field('reading_time')) > 0) : ?>
