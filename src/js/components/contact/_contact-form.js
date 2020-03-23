@@ -1,6 +1,6 @@
 'use strict';
 
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
   contactForm.onsubmit = e => {
     e.preventDefault();
