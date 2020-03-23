@@ -14,6 +14,16 @@
                             <input type="radio" name="subject">
                             <span class="radio"></span>
                         </label>
+                        <label class="w-full lg:w-3/12 tracking-widest">
+                            <span>MEDIOS</span>
+                            <input type="radio" name="subject">
+                            <span class="radio"></span>
+                        </label>
+                        <label class="w-full lg:w-3/12 tracking-widest">
+                            <span>COLABORACIONES</span>
+                            <input type="radio" name="subject">
+                            <span class="radio"></span>
+                        </label>
                     </div>
                     <input type="text" placeholder="Nombre">
                     <input type="tel" placeholder="Teléfono">
