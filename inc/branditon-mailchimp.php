@@ -14,7 +14,7 @@ if(trim($email) !== '') {
         echo 'success';
     } else {
         //echo 'error';
-        echo $result;
+        echo json_encode($result);
     }
 } else {
     echo 'error';
