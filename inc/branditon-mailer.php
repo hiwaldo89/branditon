@@ -34,7 +34,7 @@ if (empty($errors)) {
         $mail->Username = 'oswaldo@somosbloom.com';
         $mail->Password = 'Awesome2';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 465;
+        $mail->Port = 587;
         $mail->setFrom('oswaldo@somosbloom.com', 'Brand it on'); 
         $mail->addAddress('oswaldo@somosbloom.com', 'Brand it on'); 
         $mail->addReplyTo($email, $name);
@@ -44,8 +44,11 @@ if (empty($errors)) {
                       '<strong>Teléfono:</strong> ' . $phone . '<br>' .
                       '<strong>Email:</strong> ' . $email . '<br>' .
                       '<strong>Mensaje:</strong> ' . $message;
-        $mail->send();
-        echo 'success';
+        if (!$mail->send()) {
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+        } else {
+            echo 'success';
+        }
     } catch (Exception $e) {
         echo 'error';
     }
