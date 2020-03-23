@@ -18,6 +18,7 @@ if (contactForm) {
       data: new FormData(contactForm)
     })
       .then(res => {
+        console.log(res);
         if (res.data.includes('success')) {
           contactFormMessage.querySelector('span').innerHTML =
             'Recibí tu mensaje, me pondré en contacto lo más pronto posible.';
