@@ -20,7 +20,7 @@ if (trim($service) !== '') {
 }
 
 if (trim($subject) == '' || trim($name) == '' || trim($phone) == '' || trim($email) == '' || trim($message) == '') {
-    array_push($error, "Verifica que todos los campos estén llenos");
+    array_push($errors, "Verifica que todos los campos estén llenos");
 }
 
 if (empty($errors)) {
