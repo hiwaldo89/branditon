@@ -9,7 +9,7 @@ if (contactForm) {
     e.preventDefault();
 
     const mailerUrl = contactForm.action;
-    contactFormMessage.innerHTML = '';
+    contactFormMessage.querySelector('span').innerHTML = '';
 
     axios({
       method: 'post',
@@ -18,14 +18,14 @@ if (contactForm) {
     })
       .then(res => {
         if (res.data.includes('success')) {
-          contactFormMessage.innerHTML =
+          contactFormMessage.querySelector('span').innerHTML =
             'Recibí tu mensaje, me pondré en contacto lo más pronto posible.';
         } else {
-          contactFormMessage.innerHTML = res.data;
+          contactFormMessage.querySelector('span').innerHTML = res.data;
         }
       })
       .catch(e => {
-        contactFormMessage.innerHTML = e;
+        contactFormMessage.querySelector('span').innerHTML = e;
       })
       .then(() => {
         animateCSS('.contact-form__message', 'fadeInUp', function() {

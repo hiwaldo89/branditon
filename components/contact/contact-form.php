@@ -33,7 +33,7 @@
                     <div class="text-center mt-8">
                         <button type="submit" class="px-4 tracking-widest">ENVIAR</button>
                     </div>
-                    <div class="contact-form__message text-center mt-4 opacity-0">form message</div>
+                    <div class="contact-form__message text-center pt-4 opacity-0"><span>form message</span></div>
                 </form>
             </div>
         </div>

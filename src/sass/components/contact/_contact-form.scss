@@ -57,4 +57,11 @@
   input[name='service'] {
     display: none;
   }
+  .contact-form__message {
+    span {
+      display: block;
+      border: solid 1px $color--lightgray;
+      padding: 0.5rem;
+    }
+  }
 }
