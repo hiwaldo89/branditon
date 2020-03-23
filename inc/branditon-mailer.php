@@ -38,6 +38,7 @@ if (empty($errors)) {
         $mail->setFrom('oswaldo@somosbloom.com', 'Brand it on'); 
         $mail->addAddress('oswaldo@somosbloom.com', 'Brand it on'); 
         $mail->addReplyTo($email, $name);
+        $mail->CharSet = 'UTF-8';
         $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body = '<strong>Nombre:</strong> ' . $name . '<br>' .
