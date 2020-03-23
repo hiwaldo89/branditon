@@ -28,8 +28,9 @@
       position: relative;
       padding-left: 30px;
       cursor: pointer;
-      span {
-        position: absolute;
+      display: flex;
+      align-items: center span {
+        display: block;
         top: 0;
         left: 0;
         bottom: 0;
