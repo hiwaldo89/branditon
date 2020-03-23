@@ -13,7 +13,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$errors = [];
+$errors = array();
 
 if (trim($service) !== '') {
     array_push($errors, "Ocurrió un error, intenta de nuevo.");
