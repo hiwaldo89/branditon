@@ -15,7 +15,7 @@
                 </li>
                 <li class="relative">
                     <span class="absolute inset-0 z-10">BLOG</span>
-                    <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="text-4xl<?php if($pageSlug == 'blog') : ?> active<?php endif; ?>">
+                    <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="text-4xl<?php if($pageSlug == 'blog' || is_home()) : ?> active<?php endif; ?>">
                         blog
                     </a>
                 </li>
