@@ -15,7 +15,7 @@
         </div>
         <div class="lg:w-1/12 branditon-article__next">
             <?php $nextPost = get_next_post(); ?>
-            <?php if(isset($nextPost) && strlen($nextPost->post_title) > 0) : ?>
+            <?php if($nextPost != '') : ?>
                 <a href="<?php echo get_permalink($nextPost->ID); ?>" class="block relative text-lg overflow-hidden tracking-widest">
                     SIGUIENTE
                     <span class="absolute left-0 top-0 text-2xl font-secondary"><?php echo $nextPost->post_title; ?></span>
