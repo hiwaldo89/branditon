@@ -55,6 +55,3 @@ if (empty($errors)) {
 } else {
     echo $errors[0];
 }
-
-$mail = new PHPMailer(true);
-
