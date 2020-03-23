@@ -1,4 +1,5 @@
 'use strict';
 import 'slick-carousel';
 import './components/homepage/homepage';
+import './components/contact/contact';
 import './components/_header';
