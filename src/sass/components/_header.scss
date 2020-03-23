@@ -35,9 +35,10 @@
       font-family: 'Futura Heavy Italic';
       opacity: 0;
       transition: all 0.3s ease-in-out;
+      letter-spacing: 0.2em;
       &:hover,
       &.active {
-        opacity: 1;
+        opacity: 0.42;
       }
       &.active + span {
         font-family: 'Calibre Italic';
