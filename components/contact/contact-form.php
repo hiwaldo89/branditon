@@ -4,22 +4,22 @@
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
                     <div class="flex flex-wrap contact-form__subject mb-16">
-                        <label class="w-full lg:w-3/12 tracking-widest">
+                        <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>¡DI HOLA!</span>
                             <input type="radio" name="subject" checked="checked">
                             <span class="radio"></span>
                         </label>
-                        <label class="w-full lg:w-3/12 tracking-widest">
+                        <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>¿DUDAS?</span>
                             <input type="radio" name="subject">
                             <span class="radio"></span>
                         </label>
-                        <label class="w-full lg:w-3/12 tracking-widest">
+                        <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>MEDIOS</span>
                             <input type="radio" name="subject">
                             <span class="radio"></span>
                         </label>
-                        <label class="w-full lg:w-3/12 tracking-widest">
+                        <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>COLABORACIONES</span>
                             <input type="radio" name="subject">
                             <span class="radio"></span>
