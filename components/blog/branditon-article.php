@@ -1,6 +1,6 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <article class="branditon-article">
-    <div class="flex flex-wrap mt-12">
+    <div class="flex flex-wrap pt-20">
         <div class="lg:w-1/12 text-right branditon-article__prev">
             <?php $prevPost = get_previous_post(); ?>
             <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
@@ -11,7 +11,7 @@
             <?php endif; ?>
         </div>
         <div class="lg:w-4/12 mx-auto">
-            <h1 class="text-center mt-6 text-3xl px-12"><?php the_title(); ?></h1>
+            <h1 class="text-center mt-6 text-3xl px-12 font-secondary tracking-widest"><?php the_title(); ?></h1>
         </div>
         <div class="lg:w-1/12 branditon-article__next">
             <?php $nextPost = get_next_post(); ?>
@@ -25,15 +25,15 @@
     </div>
     <div class="container mx-auto">
         <div class="branditon-article__meta text-center mb-8">
-            <div class="branditon-article__cat uppercase text-xl">
+            <div class="branditon-article__cat uppercase text-xl tracking-widest">
                 <?php $categories = get_the_category(); ?>
                 <?php echo $categories[0]->name; ?>
             </div>
-            <div class="branditon-article__date">
+            <div class="branditon-article__date tracking-widest">
                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>.
             </div>
             <?php if(strlen(get_field('reading_time')) > 0) : ?>
-                <div class="branditon-article__reading-time flex items-center justify-center">
+                <div class="branditon-article__reading-time flex items-center justify-center tracking-widest">
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
                     </div>
