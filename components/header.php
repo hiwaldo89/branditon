@@ -6,7 +6,7 @@
         <nav class="mr-3 w-full md:w-1/2 flex items-center">
             <?php global $post; ?>
             <?php $pageSlug = $post->post_name; ?>
-            <ul class="flex w-full justify-between">
+            <ul class="flex flex-col md:flex-row w-full justify-between">
                 <li class="relative">
                     <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="text-4xl<?php if($pageSlug == 'about') : ?> active<?php endif; ?>">
                         about
@@ -33,7 +33,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="branditon-header__social flex md:w-3/12 justify-end items-center">
+        <div class="branditon-header__social hidden md:flex md:w-3/12 justify-end items-center">
             <a href="https://www.instagram.com/brand.it.on/" target="_blank" class="mr-4"><img src="<?php bloginfo('template_url'); ?>/img/instagram.svg" alt="brand.it.on"></a>
             <a href="https://www.facebook.com/branditon.mx/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.svg" alt="branditon.mx"></a>
         </div>

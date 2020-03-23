@@ -21,6 +21,17 @@
     }
   }
   nav {
+    position: fixed;
+    background-color: #fff;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    @media (min-width: 768px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      min-height: auto;
+    }
     span {
       width: 180px;
       max-width: 100%;
