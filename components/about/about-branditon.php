@@ -1,6 +1,6 @@
-<div class="container mx-auto about-branditon py-20">
+<div class="container mx-auto about-branditon py-20 px-4 md:px-0">
     <h2 class="text-center text-2xl mt-12 mb-12 pb-20 font-secondary tracking-widest">Acerca de Brand it on</h2>
-    <div class="flex about-branditon__content mb-24">
+    <div class="flex flex-wrap about-branditon__content mb-24">
         <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl">
             <?php the_field('left_column'); ?>
         </div>
@@ -8,7 +8,7 @@
             <?php the_field('right_column'); ?>
         </div>
     </div>
-    <div class="flex about-branditon__content">
+    <div class="flex flex-wrap about-branditon__content">
         <?php if(have_rows('images')) : while(have_rows('images')) : the_row(); ?>
             <?php $image = get_sub_field('image'); ?>
             <div class="w-full lg:w-1/2 about-branditon__col">
