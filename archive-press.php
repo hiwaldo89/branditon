@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <main>
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4 lg:px-0">
             <h2 class="text-center text-2xl py-20 my-12 tracking-widest font-secondary">Nota más reciente</h2>
             <?php 
                 $recentPostArgs = array(
