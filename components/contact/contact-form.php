@@ -3,12 +3,12 @@
         <div class="flex flex-wrap">
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
-                    <div class="flex flex-wrap">
-                        <label class="w-full lg:w-3/12">¡DI HOLA!
+                    <div class="flex flex-wrap contact-form__subject">
+                        <label class="w-full lg:w-3/12 tracking-widest">¡DI HOLA!
                             <input type="radio" name="subject" checked="checked">
                             <span class="checkmark"></span>
                         </label>
-                        <label class="w-full lg:w-3/12">¿DUDAS?
+                        <label class="w-full lg:w-3/12 tracking-widest">¿DUDAS?
                             <input type="radio" name="subject">
                             <span class="checkmark"></span>
                         </label>
