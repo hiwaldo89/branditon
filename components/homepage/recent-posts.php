@@ -1,6 +1,6 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="homepage-recent-posts py-12">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4 md:px-0">
         <h2 class="text-2xl text-center font-secondary tracking-widest mb-24">
             Últimas entradas 
             <br> 
