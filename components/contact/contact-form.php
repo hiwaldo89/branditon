@@ -3,7 +3,7 @@
         <div class="flex flex-wrap">
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
-                    <div class="d-flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <label class="w-full lg:w-3/12">¡DI HOLA!
                             <input type="radio" name="subject" checked="checked">
                             <span class="checkmark"></span>
