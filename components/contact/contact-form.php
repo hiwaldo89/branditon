@@ -6,11 +6,11 @@
                     <div class="flex flex-wrap contact-form__subject mb-16">
                         <label class="w-full lg:w-3/12 tracking-widest">¡DI HOLA!
                             <input type="radio" name="subject" checked="checked">
-                            <span class="checkmark"></span>
+                            <span></span>
                         </label>
                         <label class="w-full lg:w-3/12 tracking-widest">¿DUDAS?
                             <input type="radio" name="subject">
-                            <span class="checkmark"></span>
+                            <span></span>
                         </label>
                     </div>
                     <input type="text" placeholder="Nombre">
