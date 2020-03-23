@@ -31,12 +31,13 @@ if (empty($errors)) {
         $mail->isSMTP();   
         $mail->Host = 'smtp.zoho.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'oswaldo@somosbloom.com';
-        $mail->Password = 'Awesome2';
+        $mail->Username = 'fernanda@branditon.com.mx';
+        $mail->Password = 'Branditon_2020';
+        // Branditon_2020
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
-        $mail->setFrom('oswaldo@somosbloom.com', 'Brand it on'); 
-        $mail->addAddress('oswaldo@somosbloom.com', 'Brand it on'); 
+        $mail->setFrom('fernanda@branditon.com.mx', 'Brand it on'); 
+        $mail->addAddress('fernanda@branditon.com.mx', 'Brand it on'); 
         $mail->addReplyTo($email, $name);
         $mail->CharSet = 'UTF-8';
         $mail->isHTML(true);
