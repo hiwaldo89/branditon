@@ -32,7 +32,7 @@
                 <?php endif; wp_reset_postdata(); ?>
             </div>
         </div>
-        <div class="py-24">
+        <div>
             <?php $customQuery = $pressQuery; ?>
             <?php include(locate_template('components/blog/pagination.php', false, false)); ?>
         </div>
