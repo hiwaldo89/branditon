@@ -26,10 +26,12 @@
     color: $color--lightgray;
     label {
       position: relative;
-      padding-left: 30px;
       cursor: pointer;
       display: flex;
       align-items: center;
+      & > span {
+        order: 1;
+      }
       .radio {
         display: block;
         top: 0;
