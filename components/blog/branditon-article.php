@@ -42,7 +42,7 @@
             <?php endif; ?>
         </div>
         <?php if(strlen(get_the_post_thumbnail_url()) > 0) : ?>
-            <div class="branditon-article__img relative mb-8">
+            <div class="branditon-article__img relative mb-20">
                 <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
             </div>
         <?php endif; ?>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <?php if(get_field('gallery')) : ?>
-                <div class="w-full lg:w-4/12 px-6 ml-auto">
+                <div class="w-full lg:w-5/12 px-6 ml-auto">
                     <?php foreach(get_field('gallery') as $image) : ?>
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
                     <?php endforeach; ?>
