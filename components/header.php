@@ -1,8 +1,15 @@
 <header class="branditon-header py-4">
-    <div class="container mx-auto flex items-center">
+    <div class="container mx-auto flex items-center px-4 md:px-0">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto branditon-header__logo w-1/2 md:w-3/12">
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
+        <div class="hidden md:block w-1/2 text-right">
+            <button class="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
         <nav class="mr-3 w-full md:w-1/2 flex items-center">
             <?php global $post; ?>
             <?php $pageSlug = $post->post_name; ?>
