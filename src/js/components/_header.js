@@ -1,7 +1,7 @@
 'use strict';
 
 const hamburgerBtn = document.querySelector('.hamburger');
-const mainNavigation = documet.getElementById('main-navigation');
+const mainNavigation = document.getElementById('main-navigation');
 hamburgerBtn.onclick = e => {
   e.preventDefault();
   hamburgerBtn.classList.toggle('is-active');
