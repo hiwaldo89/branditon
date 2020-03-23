@@ -8,12 +8,14 @@
             <?php 
                 $mediaPublication = get_the_terms(get_the_ID(), 'publication_media'); 
             ?>
-            <span class="featured-press__cat uppercase text-lg inline-block mb-6"><?php echo $mediaPublication[0]->name; ?></span>
-            <h2 class="text-3xl"><?php the_title(); ?></h2>
-            <span class="featured-press__date inline-block mb-8">
+            <span class="featured-press__cat uppercase text-lg inline-block mb-6 tracking-widest"><?php echo $mediaPublication[0]->name; ?></span>
+            <h2 class="text-xl tracking-widest font-secondary"><?php the_title(); ?></h2>
+            <span class="featured-press__date inline-block mb-8 tracking-widest">
                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <?php echo $f->format(get_the_time('Y')); ?>.
             </span>
-            <?php the_content(); ?>
+            <div class="tracking-widest">
+                <?php the_content(); ?>
+            </div>
         </div>
     </a>
 </div>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main>
         <div class="container mx-auto">
-            <h2 class="text-center text-xl py-20 my-12">Nota más reciente</h2>
+            <h2 class="text-center text-2xl py-20 my-12 tracking-widest font-secondary">Nota más reciente</h2>
             <?php 
                 $recentPostArgs = array(
                     'post_type' => 'press',
