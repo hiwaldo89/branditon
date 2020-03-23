@@ -54,6 +54,8 @@ $color--pink: #d8bdad;
 
 body {
   font-family: 'Calibre';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @import 'components/components';
