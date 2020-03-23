@@ -1,5 +1,5 @@
 <div class="contact-form pt-20 pb-24">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-4 md:px-0">
         <div class="flex flex-wrap">
             <div class="w-full lg:w-8/12 mx-auto">
                 <form action="">
