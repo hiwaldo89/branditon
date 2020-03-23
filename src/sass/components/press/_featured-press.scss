@@ -7,9 +7,10 @@
     }
   }
   .featured-press__content {
-    border-top: solid 1px $color--lightgray;
-    border-right: solid 1px $color--lightgray;
-    border-bottom: solid 1px $color--lightgray;
+    border: solid 1px $color--lightgray;
+    @media (min-width: 1024px) {
+      border-left: none;
+    }
   }
   .featured-press__cat {
     color: $color--lightgray;
