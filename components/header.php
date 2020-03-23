@@ -4,7 +4,7 @@
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
         <div class="md:hidden w-1/2 text-right branditon-header__hamburger">
-            <button class="hamburger" type="button">
+            <button class="hamburger hamburger--squeeze" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
