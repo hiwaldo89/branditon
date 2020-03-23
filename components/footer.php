@@ -12,7 +12,7 @@
                 <a href="mailto:fernanda@branditon.com.mx"><img src="<?php bloginfo('template_url'); ?>/img/email-circle.svg" alt="fernanda@branditon.com.mx"></a>
             </div>
         </div>
-        <div class="w-full md:w-1/2 branditon-footer__newsletter py-32 flex flex-col justify-center px-20">
+        <div class="w-full md:w-1/2 branditon-footer__newsletter py-32 flex flex-col justify-center px-12 md:px-20">
             <h2 class="text-2xl font-secondary tracking-widest mb-4">Únete al newsletter</h2>
             <p class="mb-6 text-lg">Recibe contenido exclusivo y noticias de mi blog.</p>
             <form action="">

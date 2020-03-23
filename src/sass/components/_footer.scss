@@ -21,10 +21,13 @@
         letter-spacing: 0.2em;
       }
       img {
-        width: 50px;
+        width: 25px;
         height: auto;
         margin: auto;
         margin-right: 10px;
+        @media (min-width: 768px) {
+          width: 50px;
+        }
       }
     }
   }
