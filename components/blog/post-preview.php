@@ -22,7 +22,7 @@
                     </div>
                     <div class="post-preview__meta w-full lg:w-4/12">
                         <div class="post-preview__info-inner pt-8 h-full flex flex-col">
-                            <div class="text-center">
+                            <div class="text-center text-sm">
                                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>
                                 <?php echo $f->format(get_the_time('Y')); ?>
                             </div>
