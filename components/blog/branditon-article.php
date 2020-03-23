@@ -47,7 +47,7 @@
             </div>
         <?php endif; ?>
         <div class="-mx-6 flex flex-wrap">
-            <div class="w-full lg:w-7/12 px-6 mx-auto">
+            <div class="w-full lg:w-7/12 px-6">
                 <div class="branditon-article__content text-lg">
                     <?php the_content(); ?>
                 </div>
