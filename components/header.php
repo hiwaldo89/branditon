@@ -8,28 +8,28 @@
             <?php $pageSlug = $post->post_name; ?>
             <ul class="flex w-full justify-between">
                 <li class="relative">
-                    <span class="absolute inset-0 z-10">ABOUT</span>
                     <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="text-4xl<?php if($pageSlug == 'about') : ?> active<?php endif; ?>">
                         about
                     </a>
+                    <span class="absolute inset-0 z-10">ABOUT</span>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0 z-10">BLOG</span>
                     <a href="<?php echo get_permalink(get_page_by_path('blog')); ?>" class="text-4xl<?php if($pageSlug == 'blog' || is_home()) : ?> active<?php endif; ?>">
                         blog
                     </a>
+                    <span class="absolute inset-0 z-10">BLOG</span>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0 z-10">PRESS</span>
                     <a href="<?php echo get_permalink(get_page_by_path('press')); ?>" class="text-4xl<?php if($pageSlug == 'press' || is_post_type_archive('press')) : ?> active<?php endif; ?>">
                         press
                     </a>
+                    <span class="absolute inset-0 z-10">PRESS</span>
                 </li>
                 <li class="relative">
-                    <span class="absolute inset-0 z-10">CONTACTO</span>
                     <a href="<?php echo get_permalink(get_page_by_path('contacto')); ?>" class="text-4xl<?php if($pageSlug == 'contacto') : ?> active<?php endif; ?>">
                         contacto
                     </a>
+                    <span class="absolute inset-0 z-10">CONTACTO</span>
                 </li>
             </ul>
         </nav>

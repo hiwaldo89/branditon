@@ -28,6 +28,7 @@
       height: 1rem;
       text-align: center;
       pointer-events: none;
+      letter-spacing: 0.2rem;
     }
     a {
       color: $color--pink;
@@ -37,6 +38,9 @@
       &:hover,
       &.active {
         opacity: 1;
+      }
+      &.active + span {
+        font-family: 'Calibre Italic';
       }
     }
   }
