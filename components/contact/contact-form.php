@@ -6,29 +6,30 @@
                     <div class="flex flex-wrap contact-form__subject mb-16">
                         <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>¡DI HOLA!</span>
-                            <input type="radio" name="subject" checked="checked">
+                            <input type="radio" name="subject" value="di hola" checked="checked">
                             <span class="radio"></span>
                         </label>
                         <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>¿DUDAS?</span>
-                            <input type="radio" name="subject">
+                            <input type="radio" name="subject" value="dudas">
                             <span class="radio"></span>
                         </label>
                         <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>MEDIOS</span>
-                            <input type="radio" name="subject">
+                            <input type="radio" name="subject" value="medios">
                             <span class="radio"></span>
                         </label>
                         <label class="w-full lg:w-3/12 tracking-widest mb-6 lg:mb-0">
                             <span>COLABORACIONES</span>
-                            <input type="radio" name="subject">
+                            <input type="radio" name="subject" value="colaboraciones">
                             <span class="radio"></span>
                         </label>
                     </div>
-                    <input type="text" placeholder="Nombre">
-                    <input type="tel" placeholder="Teléfono">
-                    <input type="email" placeholder="Correo">
-                    <textarea placeholder="Mensaje"></textarea>
+                    <input type="text" placeholder="Nombre" name="name">
+                    <input type="tel" placeholder="Teléfono" name="phone">
+                    <input type="email" placeholder="Correo" name="email">
+                    <textarea placeholder="Mensaje" name="message"></textarea>
+                    <input type="text" name="service">
                     <div class="text-center mt-8">
                         <button type="submit" class="px-4 tracking-widest">ENVIAR</button>
                     </div>

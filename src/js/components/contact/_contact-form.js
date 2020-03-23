@@ -7,6 +7,14 @@ if (contactForm) {
   contactForm.onsubmit = e => {
     e.preventDefault();
     const mailerUrl = contactForm.action;
-    console.log(mailerUrl);
+    axios({
+      method: 'post',
+      url: mailerUrl,
+      data: new FormData(contactForm)
+    })
+      .then(res => {
+        console.log(res);
+      })
+      .catch(e => console.log(e));
   };
 }
