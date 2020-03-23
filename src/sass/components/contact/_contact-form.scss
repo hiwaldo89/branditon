@@ -39,6 +39,10 @@
         border-radius: 50%;
         border: solid 1px $color--lightgray;
         order: 0;
+        margin-bottom: 4px;
+      }
+      input:checked ~ .radio {
+        background-color: $color--lightgray;
       }
     }
   }
