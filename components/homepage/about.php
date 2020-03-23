@@ -8,7 +8,9 @@
                 <div class="text-justify text-xl">
                     <?php echo $aboutSection['description']; ?>
                 </div>
-                <span class="homepage-about__cross-deco"></span>
+                <a class="mt-4" href="<?php echo get_permalink(get_page_by_path('about')); ?>">
+                    <span class="homepage-about__cross-deco"></span>
+                </a>
             </div>
             <div class="w-full md:w-7/12 md:ml-auto homepage-about__images relative">
                 <div class="w-full md:w-7/12 homepage-about__front-img">
