@@ -1,6 +1,6 @@
 <div class="container py-20 mx-auto text-center contact-section">
-    <h2 class="text-3xl mt-12">¿Cómo puedes comunicarte directamente conmigo?</h2>
-    <p class="text-3xl mb-8">Envíame un correo a:</p>
+    <h2 class="text-2xl mt-12 font-secondary--italic">¿Cómo puedes comunicarte directamente conmigo?</h2>
+    <p class="text-2xl mb-8 font-secondary--italic">Envíame un correo a:</p>
     <a href="mailto:fernanda@branditon.com.mx" class="inline-block text-3xl mb-8 contact-section__email">fernanda@branditon.com.mx</a>
     <div class="flex items-center justify-center contact-section__social mb-8">
         <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram-circle.svg" alt="instagram"></a>
