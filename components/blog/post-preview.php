@@ -10,9 +10,9 @@
                     <div class="post-preview__desc w-full lg:w-8/12">
                         <div class="post-preview__info-inner pt-8 flex flex-col h-full">
                             <?php $categories = get_the_category(); ?>
-                            <div class="post-preview__cat text-center text-lg mb-8 uppercase"><?php echo $categories[0]->name; ?></div>
-                            <h3 class="text-center text-2xl mb-4"><?php the_title(); ?></h3>
-                            <div class="text-left">
+                            <div class="post-preview__cat text-center text-lg mb-8 uppercase tracking-widest"><?php echo $categories[0]->name; ?></div>
+                            <h3 class="text-center text-2xl mb-4 font-secondary tracking-widest"><?php the_title(); ?></h3>
+                            <div class="text-justify tracking-widest">
                                 <?php the_excerpt(); ?>
                             </div>
                             <div class="text-center mt-auto">
