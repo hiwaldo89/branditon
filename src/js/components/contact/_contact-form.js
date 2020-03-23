@@ -9,6 +9,7 @@ if (contactForm) {
     e.preventDefault();
 
     const mailerUrl = contactForm.action;
+    contactFormMessage.classList.add('opacity-0');
     contactFormMessage.querySelector('span').innerHTML = '';
 
     axios({
