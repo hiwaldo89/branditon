@@ -3,7 +3,7 @@
     <?php if(!isset($prevPost) || strlen($prevPost->post_title) <= 0) : ?>
         <?php $prevPost = get_posts()[0]; ?>
     <?php endif; ?>
-    <a href="<?php echo get_permalink($prevPost->ID); ?>" class="w-full lg:w-1/2 post-nav__prev text-right pt-24 px-20 pb-20">
+    <a href="<?php echo get_permalink($prevPost->ID); ?>" class="w-full lg:w-1/2 post-nav__prev lg:text-right pt-24 px-20 pb-20">
         <span class="text-sm tracking-widest">ANTERIOR</span>
         <h3 class="text-xl font-secondary tracking-widest"><?php echo $prevPost->post_title; ?></h3>
     </a>
