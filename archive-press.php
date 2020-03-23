@@ -12,7 +12,7 @@
             <?php if($recentPost->have_posts()) : while($recentPost->have_posts()) : $recentPost->the_post(); ?>
                 <?php get_template_part('components/press/featured-press'); ?>
             <?php endwhile; endif; wp_reset_postdata(); ?>
-            <h2 class="text-center text-xl py-24">Encuentra más notas</h2>
+            <h2 class="text-center text-xl py-24 tracking-widest font-secondary">Encuentra más notas</h2>
             <?php 
                 $pressArgs = array(
                     'post_type' => 'press',
