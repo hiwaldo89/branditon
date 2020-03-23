@@ -27,7 +27,7 @@ mix
       /main-navigation--open/,
       /is-active/,
       /animated/,
-      /fadeInUP/
+      /fadeInUp/
     ]
   });
 
