@@ -13,7 +13,8 @@ if(trim($email) !== '') {
     if ($result->status == $status) {
         echo 'success';
     } else {
-        echo 'error';
+        //echo 'error';
+        echo $result;
     }
 } else {
     echo 'error';
