@@ -28,6 +28,12 @@
     left: 0;
     z-index: 1200;
     transform: translateX(-100%);
+    transition: all 0.3 ease-in-out;
+    @media (max-width: 767px) {
+      &.main-navigation--open {
+        transform: translateX(0);
+      }
+    }
     @media (min-width: 768px) {
       position: relative;
       top: auto;

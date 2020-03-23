@@ -10,7 +10,7 @@
                 </span>
             </button>
         </div>
-        <nav class="mr-3 w-full md:w-1/2 flex items-center">
+        <nav id="main-navigation" class="mr-3 w-full md:w-1/2 flex items-center">
             <?php global $post; ?>
             <?php $pageSlug = $post->post_name; ?>
             <ul class="flex flex-col md:flex-row w-full justify-between">
