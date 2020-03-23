@@ -1,7 +1,7 @@
 <div class="container py-20 mx-auto text-center contact-section">
     <h2 class="text-2xl mt-12 font-secondary--italic tracking-widest">¿Cómo puedes comunicarte directamente conmigo?</h2>
-    <p class="text-2xl mb-8 font-secondary--italic tracking-widest">Envíame un correo a:</p>
-    <a href="mailto:fernanda@branditon.com.mx" class="inline-block text-2xl mb-8 contact-section__email font-secondary tracking-widest">fernanda@branditon.com.mx</a>
+    <p class="text-2xl mb-16 font-secondary--italic tracking-widest">Envíame un correo a:</p>
+    <a href="mailto:fernanda@branditon.com.mx" class="inline-block text-2xl mb-16 contact-section__email font-secondary tracking-widest">fernanda@branditon.com.mx</a>
     <div class="flex items-center justify-center contact-section__social mb-8">
         <a href="https://www.instagram.com/brand.it.on/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/instagram-circle.svg" alt="instagram"></a>
         <a href="https://www.facebook.com/branditon.mx/" target="_blank" class="mx-4"><img src="<?php bloginfo('template_url'); ?>/img/facebook-circle.svg" alt="facebook"></a>
