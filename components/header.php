@@ -3,7 +3,7 @@
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="mr-auto branditon-header__logo w-1/2 md:w-3/12">
             <img src="<?php bloginfo('template_url'); ?>/img/branditon-logo.svg" alt="branditon">
         </a>
-        <div class="md:hidden w-1/2 text-right">
+        <div class="md:hidden w-1/2 text-right branditon-header__hamburger">
             <button class="hamburger" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>

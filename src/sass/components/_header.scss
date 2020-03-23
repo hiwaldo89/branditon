@@ -1,9 +1,17 @@
 .branditon-header {
   border-bottom: solid 1px $color--lightgray;
   .branditon-header__logo {
+    @media (max-width: 767px) {
+      z-index: 1600;
+    }
     img {
       width: 180px;
       max-width: 100%;
+    }
+  }
+  .branditon-header__hamburger {
+    @media (max-width: 767px) {
+      z-index: 1600;
     }
   }
   .branditon-header__social {
