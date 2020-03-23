@@ -33,7 +33,7 @@ if (empty($errors)) {
         $mail->SMTPAuth = true;
         $mail->Username = 'oswaldo@somosbloom.com';
         $mail->Password = 'Awesome2';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTSSL;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->setFrom('oswaldo@somosbloom.com', 'Brand it on'); 
         $mail->addAddress('oswaldo@somosbloom.com', 'Brand it on'); 
