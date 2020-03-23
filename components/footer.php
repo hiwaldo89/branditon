@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="w-full md:w-1/2 branditon-footer__newsletter py-32 flex flex-col justify-center px-20">
-            <h2 class="text-3xl">Únete al newsletter</h2>
-            <p class="mb-6">Recibe contenido exclusivo y noticias de mi blog.</p>
+            <h2 class="text-2xl font-secondary tracking-widest mb-4">Únete al newsletter</h2>
+            <p class="mb-6 text-lg">Recibe contenido exclusivo y noticias de mi blog.</p>
             <form action="">
                 <div class="branditon-footer__newsletter-input relative">
                     <input type="text" placeholder="Escribe tu mail" class="py-3 px-4">
