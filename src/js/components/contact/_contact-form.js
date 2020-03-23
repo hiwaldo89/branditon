@@ -14,6 +14,9 @@ if (contactForm) {
     })
       .then(res => {
         console.log(res);
+        if (res.data == 'success') {
+        } else {
+        }
       })
       .catch(e => console.log(e));
   };
