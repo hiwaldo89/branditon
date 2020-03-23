@@ -1,5 +1,6 @@
 'use strict';
 import axios from 'axios';
+import animateCSS from './helpers/animate_css';
 
 const mailchimpForm = document.querySelector(
   '.branditon-footer__newsletter form'
