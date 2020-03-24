@@ -17,7 +17,7 @@
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="absolute w-full h-full top-0 left-0 object-cover">
                 </div>
             </div>
-            <?php $counter = $counter + 500; ?>
+            <?php $counter = $counter + 300; ?>
         <?php endwhile; endif; ?>
     </div>  
 </div>
