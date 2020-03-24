@@ -4,11 +4,11 @@
         <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl mb-8 lg:mb-0" data-aos="fade-up">
             <?php the_field('left_column'); ?>
         </div>
-        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl">
+        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl" data-aos="fade-up" data-aos-delay="700">
             <?php the_field('right_column'); ?>
         </div>
     </div>
-    <div class="flex flex-wrap about-branditon__content" data-aos="fade-up" data-aos-delay="700">
+    <div class="flex flex-wrap about-branditon__content">
         <?php if(have_rows('images')) : while(have_rows('images')) : the_row(); ?>
             <?php $image = get_sub_field('image'); ?>
             <div class="w-full md:w-1/2 about-branditon__col mb-6 lg:mb-0">
