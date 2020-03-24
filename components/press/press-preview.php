@@ -2,7 +2,7 @@
 <div class="press-preview mb-8" data-aos="fade-up">
     <a href="<?php the_permalink(); ?>">
         <div class="press-preview__img relative mb-8">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
+            <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover lazy">
         </div>
         <div class="press-preview__content text-center px-4">
             <?php $mediaPublication = get_the_terms(get_the_ID(), 'publication_media'); ?>

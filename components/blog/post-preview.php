@@ -3,7 +3,7 @@
     <article>
         <a href="<?php the_permalink(); ?>" class="flex flex-wrap">
             <div class="post-preview__img post-preview__col relative w-full md:w-7/12">
-                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
+                <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover lazy">
             </div>
             <div class="post-preview__col w-full md:w-5/12">
                 <div class="flex flex-wrap post-preview__info h-full">
@@ -27,7 +27,7 @@
                                 <?php echo $f->format(get_the_time('Y')); ?>
                             </div>
                             <div class="post-preview__reading-time mt-auto">
-                                <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto mb-3">
+                                <img data-src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mx-auto mb-3 lazy">
                                 <p class="tracking-widest">
                                     Lectura de 
                                     <br>

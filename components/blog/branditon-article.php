@@ -35,7 +35,7 @@
             <?php if(strlen(get_field('reading_time')) > 0) : ?>
                 <div class="branditon-article__reading-time flex items-center justify-center tracking-widest">
                     <div>
-                        <img src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2">
+                        <img data-src="<?php bloginfo('template_url'); ?>/img/reloj.svg" alt="reloj" class="mr-2 lazy">
                     </div>
                     <span>Lectura de <?php the_field('reading_time'); ?></span>
                 </div>
@@ -43,7 +43,7 @@
         </div>
         <?php if(strlen(get_the_post_thumbnail_url()) > 0) : ?>
             <div class="branditon-article__img relative mb-20">
-                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
+                <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover lazy">
             </div>
         <?php endif; ?>
         <div class="lg:-mx-6 flex flex-wrap">
@@ -55,7 +55,7 @@
             <?php if(get_field('gallery')) : ?>
                 <div class="w-full lg:w-5/12 px-6 ml-auto">
                     <?php foreach(get_field('gallery') as $image) : ?>
-                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8">
+                        <img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8 lazy">
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
