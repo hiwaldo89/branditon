@@ -14,7 +14,9 @@
             $result = curl_exec($curl_connection);
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
-            var_dump($instagramFeed);
         ?>
+        <?php foreach($result as $image) : ?>
+            <?php echo $image; ?>
+        <?php endforeach; ?>
     </div>
 </div>
