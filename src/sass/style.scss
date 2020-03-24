@@ -40,7 +40,7 @@ $hamburger-layer-color: #83807f;
     url('./fonts/FuturaBT-HeavyItalic.woff') format('woff'),
     url('./fonts/FuturaHeavyItalicfont.ttf') format('truetype');
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -58,7 +58,7 @@ $hamburger-layer-color: #83807f;
     url('./fonts/Calibre-MediumItalic.woff') format('woff'),
     url('./fonts/CalibreMediumItalic.otf');
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
 }
 
 $color--lightgray: #83807f;
