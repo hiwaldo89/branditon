@@ -6,7 +6,8 @@
     <div class="instagram-feed__slid mb-12">
         <?php 
             $user_id = 17841419233438259; 
-            $access_token = "IGQVJVQmtiaHBKU0piaWlLcGJBalY2Q0FEcTdPTF9hM09qLUdhcEV3bmVqZAWZAlOS0wMmVHNFJXRGVFM1BpZAU9iWHMyR2x3bUNoS3dLVW80MDYwWnRYU0x2OXQzM3dJTTVONXUzRTdlaFlDWGh3WkdWeEpCUXlWeXY3cVBj";
+            //$access_token = "IGQVJVQmtiaHBKU0piaWlLcGJBalY2Q0FEcTdPTF9hM09qLUdhcEV3bmVqZAWZAlOS0wMmVHNFJXRGVFM1BpZAU9iWHMyR2x3bUNoS3dLVW80MDYwWnRYU0x2OXQzM3dJTTVONXUzRTdlaFlDWGh3WkdWeEpCUXlWeXY3cVBj";
+            $access_token = "IGQVJWWTBHU0hnRzVkVHZAzaEFOS2VnT2hsaDlaczJnN3ZAad1RZAbVprdWZAidU1SU3VhVzJxZAlE4VkJVRktmc2FNZAy1iejBxUFMyV1ZArWU9YV2NMV2IyM0JVeEhJYmFRRU9BTmthQnFlVWZAKVEVHVVVDYwZDZD";
 
             $curl_connection = curl_init();
             curl_setopt($curl_connection, CURLOPT_URL, 'https://graph.instagram.com/' . $user_id . '/media?fields=media_url,permalink,username&access_token=' . $access_token);
