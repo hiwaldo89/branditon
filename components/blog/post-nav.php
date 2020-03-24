@@ -1,7 +1,6 @@
 <div class="post-nav flex flex-wrap">
     <?php $prevPost = get_previous_post(); ?>
-    <?php var_dump($prevPost); ?>
-    <?php if($prevPost != '') : ?>
+    <?php if($prevPost == '') : ?>
         <?php $prevPost = get_posts()[0]; ?>
     <?php endif; ?>
     <a href="<?php echo get_permalink($prevPost->ID); ?>" class="w-full lg:w-1/2 post-nav__prev lg:text-right pt-24 px-20 pb-20">
