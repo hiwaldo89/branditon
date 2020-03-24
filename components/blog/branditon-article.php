@@ -3,7 +3,7 @@
     <div class="flex flex-wrap pt-20 mb-12">
         <div class="w-1/2 lg:w-1/12 text-right branditon-article__prev order-0 hidden lg:block">
             <?php $prevPost = get_previous_post(); ?>
-            <?php if(isset($prevPost) && strlen($prevPost->post_title) > 0) : ?>
+            <?php if($prevPost != '') : ?>
                 <a href="<?php echo get_permalink($prevPost->ID) ?>" class="block relative text-lg overflow-hidden tracking-widest">
                     ANTERIOR
                     <span class="absolute right-0 top-0 text-2xl font-secondary"><?php echo $prevPost->post_title; ?></span>
