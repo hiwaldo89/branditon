@@ -15,6 +15,7 @@
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
+        <?php var_dump($instagramFeed); ?>
         <?php foreach($instagramFeed->data as $image) : ?>
             <div class="instagram-feed__slide">
                 <a href="<?php echo $image->permalink; ?>" target="_blank">
