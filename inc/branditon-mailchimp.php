@@ -25,7 +25,7 @@ function mailchimp_subscirbe($email, $status, $list_id, $api_key, $merge_fields)
         'apiKey' => $api_key,
         'email_address' => $email,
         'status' => $status,
-        'merge_fields' => $merge_fields
+        //'merge_fields' => $merge_fields
     );
     $mch_api = curl_init();
 
