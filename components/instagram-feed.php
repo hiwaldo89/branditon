@@ -15,7 +15,7 @@
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
-        <?php var_dump($instagramFeed); ?>
+        <?php var_dump($instagramFeed->data); ?>
         
     </div>
 </div>
