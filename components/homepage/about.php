@@ -18,7 +18,7 @@
                         <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
                     </div>
                 </div>
-                <div class="w-full md:w-7/12 homepage-about__back-img md:ml-auto" data-rellax-speed="3" data-rellax-mobile-speed="0" data-rellax-xs-speed="0" data-aos="fade-up">
+                <div class="w-full md:w-7/12 homepage-about__back-img md:ml-auto" data-rellax-speed="3" data-rellax-mobile-speed="0" data-rellax-xs-speed="0" data-aos="fade-up" data-aos-delay="50">
                     <img src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full">
                 </div>
             </div>
