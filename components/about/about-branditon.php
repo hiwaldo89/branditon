@@ -12,7 +12,7 @@
         <?php $counter = 0; ?>
         <?php if(have_rows('images')) : while(have_rows('images')) : the_row(); ?>
             <?php $image = get_sub_field('image'); ?>
-            <div class="w-full md:w-1/2 about-branditon__col mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="">
+            <div class="w-full md:w-1/2 about-branditon__col mb-6 lg:mb-0" data-aos="fade-up" data-aos-delay="<?php echo strval($counter); ?>">
                 <div class="about-branditon__img relative">
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="absolute w-full h-full top-0 left-0 object-cover">
                 </div>
