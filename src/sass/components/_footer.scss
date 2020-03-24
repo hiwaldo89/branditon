@@ -5,6 +5,10 @@
     img {
       width: 39px;
       height: auto;
+      transtion: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
   .branditon-footer__newsletter {
