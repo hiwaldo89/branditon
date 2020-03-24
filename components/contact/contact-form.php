@@ -31,7 +31,7 @@
                     <textarea placeholder="Mensaje" name="message" class="focus:outline-none"></textarea>
                     <input type="text" name="service">
                     <div class="text-center mt-8">
-                        <button type="submit" class="px-4 tracking-widest" class="focus:outline-none">ENVIAR</button>
+                        <button type="submit" class="px-4 tracking-widest focus:outline-none">ENVIAR</button>
                     </div>
                     <div class="contact-form__message text-center pt-4 opacity-0"><span>form message</span></div>
                 </form>
