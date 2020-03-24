@@ -2,7 +2,7 @@
 <div class="post-preview mb-12" data-aos="fade-right">
     <article>
         <a href="<?php the_permalink(); ?>" class="flex flex-wrap">
-            <div class="post-preview__img post-preview__col relative w-full md:w-7/12">
+            <div class="post-preview__img post-preview__col relative w-full md:w-7/12 overflow-hidden">
                 <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover lazy">
             </div>
             <div class="post-preview__col w-full md:w-5/12">
