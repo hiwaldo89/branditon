@@ -17,6 +17,7 @@
         ?>
         <?php foreach($instagramFeed as $image) : ?>
             <div class="instagram-feed__slide">
+                <?php var_dump($image); ?>
                 <a href="<?php echo $image['permalink']; ?>" target="_blank">
                     <img src="<?php echo $image['media_url']; ?>" alt="">
                 </a>
