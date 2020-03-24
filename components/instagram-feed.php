@@ -15,7 +15,7 @@
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
-        <?php foreach($result as $image) : ?>
+        <?php foreach($instagramFeed as $image) : ?>
             <?php echo $image; ?>
         <?php endforeach; ?>
     </div>
