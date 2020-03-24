@@ -16,8 +16,7 @@
             <?php 
                 $pressArgs = array(
                     'post_type' => 'press',
-                    //'offset' => 1,
-                    'posts_per_page' => 2,
+                    'posts_per_page' => 6,
                     'paged' => (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1
                 );
                 $pressQuery = new WP_Query($pressArgs);
