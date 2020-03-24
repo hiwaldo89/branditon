@@ -13,7 +13,7 @@ if (document.querySelector('.instagram-feed')) {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 1
         }
       }
     ]
