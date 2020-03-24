@@ -7,6 +7,12 @@
     img {
       width: 180px;
       max-width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
     }
   }
   .branditon-header__hamburger {
@@ -16,6 +22,9 @@
   }
   .branditon-header__social {
     a {
+      img {
+        transtion: all 0.3s ease-in-out;
+      }
       &:first-child {
         img {
           height: 15px;
@@ -24,6 +33,11 @@
       &:nth-child(2) {
         img {
           height: 18px;
+        }
+      }
+      &:hover {
+        img {
+          opacity: 0.8;
         }
       }
     }
