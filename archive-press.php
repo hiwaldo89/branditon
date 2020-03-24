@@ -25,7 +25,7 @@
             <div class="flex flex-wrap -mx-4">
                 <?php if($pressQuery->have_posts()) : ?>
                     <?php while($pressQuery->have_posts()) : $pressQuery->the_post(); ?>
-                    <div class="w-full lg:w-4/12 px-4">
+                    <div class="w-full md:w-1/2 lg:w-4/12 px-4">
                         <?php get_template_part('components/press/press-preview'); ?>
                     </div>
                     <?php endwhile; ?>
