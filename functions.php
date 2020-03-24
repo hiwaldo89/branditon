@@ -29,6 +29,7 @@ add_action( 'after_setup_theme', 'branditon_setup' );
 function branditon_scripts() {
     wp_enqueue_style( 'branditon-style', get_stylesheet_uri() );
     wp_enqueue_script( 'branditon-scripts', get_template_directory_uri() . '/dist/app.js', array(), false, true );
+    wp_enqueue_script( 'facebook-sdk', 'https://connect.facebook.net/en_US/sdk.js', '', '', true);
 }
 add_action( 'wp_enqueue_scripts', 'branditon_scripts' );
 
