@@ -13,7 +13,7 @@
                 </a>
             </div>
             <div class="w-full md:w-7/12 md:ml-auto homepage-about__images relative">
-                <div class="w-full md:w-7/12 homepage-about__front-img">
+                <div class="w-full md:w-7/12 homepage-about__front-img paroller-item" data-paroller-factor="0.4" data-paroller-type="foreground">
                     <div>
                         <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
                     </div>
