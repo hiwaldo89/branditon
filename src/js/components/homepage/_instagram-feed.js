@@ -6,6 +6,9 @@ if (document.querySelector('.instagram-feed')) {
     slidesToShow: 5,
     centerMode: true,
     arrows: false,
+    autoplay: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 768,
