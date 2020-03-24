@@ -1,9 +1,9 @@
 <div class="instagram-feed py-12">
-    <div class="container mx-auto text-center mb-12">
+    <div class="container mx-auto text-center mb-12" data-aos="fade-up">
         <h2 class="text-xl tracking-widest">INSTAGRAM</h2>
         <a href="" class="text-xl tracking-widest">@brand.it.on</a>
     </div>
-    <div class="instagram-feed__slider mb-12">
+    <div class="instagram-feed__slider mb-12" data-aos="fade-up">
         <?php 
             $user_id = 17841419233438259; 
             $access_token = "IGQVJWWTBHU0hnRzVkVHZAzaEFOS2VnT2hsaDlaczJnN3ZAad1RZAbVprdWZAidU1SU3VhVzJxZAlE4VkJVRktmc2FNZAy1iejBxUFMyV1ZArWU9YV2NMV2IyM0JVeEhJYmFRRU9BTmthQnFlVWZAKVEVHVVVDYwZDZD";
