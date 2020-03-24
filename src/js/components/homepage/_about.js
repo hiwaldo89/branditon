@@ -1,9 +1,4 @@
 'use strict';
-import simpleParallax from 'simple-parallax-js';
+import Rellax from 'rellax';
 
-const frontImage = document.querySelector('.homepage-about__front-img');
-new simpleParallax(frontImage, {
-  orientation: 'up',
-  overflow: true,
-  scale: 1.2
-});
+new Rellax('.homepage-about__font-img');
