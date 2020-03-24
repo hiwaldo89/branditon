@@ -19,7 +19,7 @@
                     <div class="homepage-recent-posts__article w-full" data-aos="fade-up" data-aos-delay="<?php echo 50 * $counter; ?>">
                         <a href="<?php the_permalink(); ?>">
                             <div class="homepage-recent-posts__article-img">
-                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                                <img data-src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="lazy">
                             </div>
                             <div class="text-center mt-8 mb-4 tracking-widest">
                                 <?php echo ucfirst(get_the_time('F')); ?> <?php echo $f->format(get_the_time('j')); ?>, <br>

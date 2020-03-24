@@ -18,7 +18,7 @@
         <?php foreach($instagramFeed->data as $image) : ?>
             <div class="instagram-feed__slide">
                 <a href="<?php echo $image->permalink; ?>" target="_blank">
-                    <img src="<?php echo $image->media_url; ?>" alt="<?php echo $image->username; ?>">
+                    <img data-src="<?php echo $image->media_url; ?>" alt="<?php echo $image->username; ?>" class="lazy">
                 </a>
             </div>
         <?php endforeach; ?>

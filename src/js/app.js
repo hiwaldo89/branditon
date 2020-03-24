@@ -6,4 +6,9 @@ import './components/_header';
 import './components/_footer';
 
 import AOS from 'aos';
+import LazyLoad from 'vanilla-lazyload';
+
 AOS.init();
+new LazyLoad({
+  elements_selector: '.lazy'
+});

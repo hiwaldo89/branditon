@@ -15,11 +15,11 @@
             <div class="w-full md:w-7/12 md:ml-auto homepage-about__images relative" data-aos="fade-up">
                 <div class="w-full md:w-7/12 homepage-about__front-img z-10" data-rellax-speed="4" data-rellax-mobile-speed="0" data-rellax-xs-speed="0">
                     <div>
-                        <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
+                        <img data-src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full lazy">
                     </div>
                 </div>
                 <div class="w-full md:w-7/12 homepage-about__back-img md:ml-auto" data-rellax-speed="2" data-rellax-mobile-speed="0" data-rellax-xs-speed="0">
-                    <img src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full">
+                    <img data-src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full lazy">
                 </div>
             </div>
         </div>
