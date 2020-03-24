@@ -15,7 +15,7 @@
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
-        <?php foreach($instagramFeed as $image) : ?>
+        <?php foreach($instagramFeed[0] as $image) : ?>
             <div class="instagram-feed__slide">
                 <?php echo urlencode($image['media_url']); ?>
                 <?php var_dump($image); ?>
