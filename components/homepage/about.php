@@ -13,12 +13,12 @@
                 </a>
             </div>
             <div class="w-full md:w-7/12 md:ml-auto homepage-about__images relative">
-                <div class="w-full md:w-7/12 homepage-about__front-img" data-rellax-speed="5">
+                <div class="w-full md:w-7/12 homepage-about__front-img rellax-item" data-rellax-speed="2">
                     <div>
                         <img src="<?php echo $aboutSection['front_image']['url']; ?>" alt="<?php echo $aboutSection['front_image']['alt']; ?>" class="w-full">
                     </div>
                 </div>
-                <div class="w-full md:w-7/12 homepage-about__back-img md:ml-auto">
+                <div class="w-full md:w-7/12 homepage-about__back-img md:ml-auto rellax-item" data-rellax-speed="1">
                     <img src="<?php echo $aboutSection['back_image']['url']; ?>" alt="<?php echo $aboutSection['back_image']['alt']; ?>" class="w-full">
                 </div>
             </div>
