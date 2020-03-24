@@ -1,5 +1,5 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
-<div class="post-preview mb-12">
+<div class="post-preview mb-12" data-aos="fade-right">
     <article>
         <a href="<?php the_permalink(); ?>" class="flex flex-wrap">
             <div class="post-preview__img post-preview__col relative w-full md:w-7/12">
