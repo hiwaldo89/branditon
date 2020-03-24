@@ -3,7 +3,7 @@
         <h2 class="text-xl tracking-widest">INSTAGRAM</h2>
         <a href="" class="text-xl tracking-widest">@brand.it.on</a>
     </div>
-    <div class="instagram-feed__slider mb-12">
+    <div class="instagram-feed__slid mb-12">
         <?php 
             $user_id = 17841419233438259; 
             $access_token = "IGQVJVQmtiaHBKU0piaWlLcGJBalY2Q0FEcTdPTF9hM09qLUdhcEV3bmVqZAWZAlOS0wMmVHNFJXRGVFM1BpZAU9iWHMyR2x3bUNoS3dLVW80MDYwWnRYU0x2OXQzM3dJTTVONXUzRTdlaFlDWGh3WkdWeEpCUXlWeXY3cVBj";
@@ -16,7 +16,7 @@
             $instagramFeed = json_decode($result);
         ?>
         <?php foreach($instagramFeed->data as $image) : ?>
-            <div class="instagram-feed__slid">
+            <div class="instagram-feed__slide">
                 <a href="<?php echo $image->permalink; ?>" target="_blank">
                     <img src="<?php echo $image->media_url; ?>" alt="<?php echo $image->username; ?>">
                 </a>
