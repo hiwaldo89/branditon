@@ -16,7 +16,7 @@
             $instagramFeed = json_decode($result);
         ?>
         <?php foreach($instagramFeed->data as $image) : ?>
-            <?php var_dump($image['media_url']); ?>
+            <?php var_dump($image->media_url); ?>
             <div class="instagram-feed__slide">
                 <a href="">
                     <img src="" alt="">
