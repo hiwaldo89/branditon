@@ -17,8 +17,8 @@
             <p class="mb-6 text-lg">Recibe contenido exclusivo y noticias de mi blog.</p>
             <form action="<?php bloginfo('template_url'); ?>/inc/branditon-mailchimp.php">
                 <div class="branditon-footer__newsletter-input relative">
-                    <input type="text" placeholder="Escribe tu mail" class="py-3 px-4" name="email">
-                    <button type="submit" class="absolute top-0 bottom-0 right-0 border-0 outline-none">
+                    <input type="text" placeholder="Escribe tu mail" class="py-3 px-4 focus:outline-none" name="email">
+                    <button type="submit" class="absolute top-0 bottom-0 right-0 border-0 outline-none focus:outline-none">
                         <img src="<?php bloginfo('template_url'); ?>/img/arrow.svg" alt="flecha">
                     </button>
                     <div class="branditon-footer__newsletter-message opacity-0">
