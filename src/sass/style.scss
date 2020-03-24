@@ -38,7 +38,7 @@ $hamburger-layer-color: #83807f;
   font-family: 'Futura Heavy Italic';
   src: url('./fonts/FuturaBT-HeavyItalic.woff2') format('woff2'),
     url('./fonts/FuturaBT-HeavyItalic.woff') format('woff'),
-    url('./fonts/FuturaHeavyItalicfont.ttf');
+    url('./fonts/FuturaHeavyItalicfont.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
@@ -47,7 +47,7 @@ $hamburger-layer-color: #83807f;
   font-family: 'Futura Heavy';
   src: url('./fonts/FuturaBT-Heavy.woff2') format('woff2'),
     url('./fonts/FuturaBT-Heavy.woff') format('woff'),
-    url('./fonts/FuturaHeavyfont.ttf');
+    url('./fonts/FuturaHeavyfont.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
