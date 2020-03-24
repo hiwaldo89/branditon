@@ -9,14 +9,18 @@
             $access_token = "IGQVJVQmtiaHBKU0piaWlLcGJBalY2Q0FEcTdPTF9hM09qLUdhcEV3bmVqZAWZAlOS0wMmVHNFJXRGVFM1BpZAU9iWHMyR2x3bUNoS3dLVW80MDYwWnRYU0x2OXQzM3dJTTVONXUzRTdlaFlDWGh3WkdWeEpCUXlWeXY3cVBj";
 
             $curl_connection = curl_init();
-            curl_setopt($curl_connection, CURLOPT_URL, 'https://graph.instagram.com/' . $user_id . '/media?fields=media_url,permalink&access_token=' . $access_token);
+            curl_setopt($curl_connection, CURLOPT_URL, 'https://graph.instagram.com/' . $user_id . '/media?fields=media_url,permalink,caption&access_token=' . $access_token);
             curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
             $result = curl_exec($curl_connection);
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
         <?php foreach($instagramFeed as $image) : ?>
-            <?php var_dump($image) ?>
+            <div class="instagram-feed__slide">
+                <a href="<?php echo $image['permalink']; ?>" target="_blank">
+                    <img src="<?php echo $image['media_url']; ?>" alt="<?php echo $image['caption']; ?>">
+                </a>
+            </div>
         <?php endforeach; ?>
     </div>
 </div>
