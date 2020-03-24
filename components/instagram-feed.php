@@ -4,6 +4,17 @@
         <a href="" class="text-xl tracking-widest">@brand.it.on</a>
     </div>
     <div class="instagram-feed__slider">
-        Here goes the instagram feed
+        <?php 
+            $user_id = 17841419233438259; 
+            $access_token = "IGQVJVQmtiaHBKU0piaWlLcGJBalY2Q0FEcTdPTF9hM09qLUdhcEV3bmVqZAWZAlOS0wMmVHNFJXRGVFM1BpZAU9iWHMyR2x3bUNoS3dLVW80MDYwWnRYU0x2OXQzM3dJTTVONXUzRTdlaFlDWGh3WkdWeEpCUXlWeXY3cVBj";
+
+            $curl_connection = curl_init();
+            curl_setopt($curl_connection, CURLOPT_URL, 'https://graph.instagram.com/' . $user_id . '/media?access_token=' . $access_token);
+            curl_setopt($curl_connection, CURLOPT_RETURNTRANSFER, true);
+            $result = curl_exec($curl_connection);
+            curl_close($curl_connection);
+            $instagramFeed = json_decode($result);
+            var_dump($instagramFeed);
+        ?>
     </div>
 </div>
