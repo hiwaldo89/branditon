@@ -15,10 +15,10 @@
             curl_close($curl_connection);
             $instagramFeed = json_decode($result);
         ?>
-        <?php foreach($result as $image) : ?>
+        <?php foreach($instagramFeed as $image) : ?>
             <div class="instagram-feed__slide">
                 <a href="<?php echo $image['permalink']; ?>" target="_blank">
-                    <img src="<?php echo $image['media_url']; ?>" alt="<?php echo $image->username; ?>">
+                    <img src="<?php echo $image['media_url']; ?>" alt="">
                 </a>
             </div>
         <?php endforeach; ?>
