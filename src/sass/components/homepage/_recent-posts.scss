@@ -6,6 +6,13 @@
   .homepage-recent-posts__article {
     padding-left: 15px;
     padding-right: 15px;
+    &:hover {
+      .homepage-recent-posts__article-img {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
     .homepage-recent-posts__article-img {
       position: relative;
       &:after {
@@ -20,6 +27,8 @@
         top: 0;
         left: 0;
         object-fit: cover;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
       }
     }
     .homepage-recent-posts__article-deco {

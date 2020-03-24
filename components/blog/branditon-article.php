@@ -48,7 +48,7 @@
         <?php endif; ?>
         <div class="lg:-mx-6 flex flex-wrap">
             <div class="w-full lg:w-7/12 lg:px-6">
-                <div class="branditon-article__content text-lg" data-aos="fade-right">
+                <div class="branditon-article__content text-lg text-justify" data-aos="fade-right">
                     <?php the_content(); ?>
                 </div>
             </div>
