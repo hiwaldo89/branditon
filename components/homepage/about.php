@@ -1,8 +1,8 @@
 <?php $aboutSection = get_field('about_section'); ?>
 <?php if ($aboutSection) : ?>
     <div class="homepage-about py-12">
-        <div class="container mx-auto flex flex-wrap px-4 lg:px-0">
-            <div class="w-full md:w-4/12 lg:w-3/12">
+        <div class="container mx-auto flex flex-wrap px-4 lg:px-0 items-center">
+            <div class="w-full md:w-5/12 lg:w-3/12">
                 <span class="homepage-about__line-deco"></span>
                 <h2 class="text-4xl text-center tracking-widest"><?php echo $aboutSection['headline']; ?></h2>
                 <div class="text-justify text-xl">
