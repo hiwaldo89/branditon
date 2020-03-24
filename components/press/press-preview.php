@@ -1,5 +1,5 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
-<div class="press-preview mb-8">
+<div class="press-preview mb-8" data-aos="fade-up">
     <a href="<?php the_permalink(); ?>">
         <div class="press-preview__img relative mb-8">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover">
