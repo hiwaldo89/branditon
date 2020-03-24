@@ -23,8 +23,10 @@
     color: $color--lightgray;
   }
   .post-preview__info {
-    margin-left: -15px;
-    margin-right: -15px;
+    @media (min-width: 1024px) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
     .post-preview__info-inner {
       @media (min-width: 768px) {
         border-top: solid 1px $color--lightgray;
