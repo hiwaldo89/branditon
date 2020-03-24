@@ -3,8 +3,16 @@
   .post-nav__next {
     border-top: solid 1px $color--lightgray;
     margin-top: -1px;
+    h3 {
+      transition: all 0.3s ease-in-out;
+    }
     span {
       color: $color--lightgray;
+    }
+    &:hover {
+      h3 {
+        opacity: 0.7;
+      }
     }
   }
   .post-nav__next {
