@@ -28,6 +28,7 @@
     "axios": "^0.19.2",
     "hamburgers": "^1.1.3",
     "jquery": "^3.4.1",
+    "paroller.js": "^1.4.6",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^1.2.0"
   }
