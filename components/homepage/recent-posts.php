@@ -1,7 +1,7 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="homepage-recent-posts py-12">
     <div class="container mx-auto px-4 lg:px-0">
-        <h2 class="text-2xl text-center font-secondary tracking-widest mb-24">
+        <h2 class="text-2xl text-center font-secondary tracking-widest mb-24" data-aos="fade-up">
             Últimas entradas 
             <br> 
             del blog
@@ -14,8 +14,9 @@
         ?>
         <?php if($recentPostsQuery->have_posts()) : ?>
             <div class="flex flex-wrap homepage-recent-posts__wrapper">
+                <?php $counter = 1; ?>
                 <?php while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
-                    <div class="homepage-recent-posts__article w-full">
+                    <div class="homepage-recent-posts__article w-full" data-aos="fade-up" data-aos-delay="<?php echo 50 * $counter; ?>">
                         <a href="<?php the_permalink(); ?>">
                             <div class="homepage-recent-posts__article-img">
                                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
@@ -28,6 +29,7 @@
                             <span class="homepage-recent-posts__article-deco"></span>
                         </a>
                     </div>
+                    <?php $counter = $counter + 1; ?>
                 <?php endwhile; ?>
             </div>
         <?php endif; wp_reset_postdata(); ?>
