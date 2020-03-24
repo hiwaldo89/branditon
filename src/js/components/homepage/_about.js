@@ -1,4 +1,7 @@
 'use strict';
 import Rellax from 'rellax';
 
-new Rellax('.rellax-item');
+if (document.querySelector('.homepage-about')) {
+  new Rellax('.homepage-about__front-img');
+  new Rellax('.homepage-about__back-img');
+}
