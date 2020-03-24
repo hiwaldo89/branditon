@@ -4,7 +4,7 @@
         <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl mb-8 lg:mb-0" data-aos="fade-up">
             <?php the_field('left_column'); ?>
         </div>
-        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl" data-aos="fade-up" data-aos-delay="700">
+        <div class="w-full lg:w-1/2 text-justify about-branditon__col text-xl" data-aos="fade-up" data-aos-delay="600">
             <?php the_field('right_column'); ?>
         </div>
     </div>
