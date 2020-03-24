@@ -18,7 +18,6 @@ mailchimpForm.onsubmit = e => {
     data: new FormData(mailchimpForm)
   })
     .then(res => {
-      console.log(res);
       if (res.data == 'error') {
         mailchimpFormMessage.querySelector('span').innerHTML =
           'Ocurrió un error. Intenta de nuevo.';
