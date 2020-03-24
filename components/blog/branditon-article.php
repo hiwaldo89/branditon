@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="container mx-auto px-4 lg:px-0">
-        <div class="branditon-article__meta text-center mb-16">
+        <div class="branditon-article__meta text-center mb-16" data-aos="fade-up">
             <div class="branditon-article__cat uppercase text-xl tracking-widest">
                 <?php $categories = get_the_category(); ?>
                 <?php echo $categories[0]->name; ?>
@@ -42,20 +42,20 @@
             <?php endif; ?>
         </div>
         <?php if(strlen(get_the_post_thumbnail_url()) > 0) : ?>
-            <div class="branditon-article__img relative mb-20">
+            <div class="branditon-article__img relative mb-20" data-aos="fade-up">
                 <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full top-0 left-0 object-cover lazy">
             </div>
         <?php endif; ?>
         <div class="lg:-mx-6 flex flex-wrap">
             <div class="w-full lg:w-7/12 lg:px-6">
-                <div class="branditon-article__content text-lg">
+                <div class="branditon-article__content text-lg" data-aos="fade-right">
                     <?php the_content(); ?>
                 </div>
             </div>
             <?php if(get_field('gallery')) : ?>
                 <div class="w-full lg:w-5/12 px-6 ml-auto">
                     <?php foreach(get_field('gallery') as $image) : ?>
-                        <img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8 lazy">
+                        <img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="w-full mb-8 lazy" data-aos="fade-up">
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
