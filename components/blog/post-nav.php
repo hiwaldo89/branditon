@@ -1,5 +1,6 @@
 <div class="post-nav flex flex-wrap">
     <?php $prevPost = get_previous_post(); ?>
+    <?php var_dump($prevPost); ?>
     <?php if($prevPost != '') : ?>
         <?php $prevPost = get_posts()[0]; ?>
     <?php endif; ?>
