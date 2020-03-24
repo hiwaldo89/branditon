@@ -17,7 +17,7 @@
                 <?php $counter = 1; ?>
                 <?php while($recentPostsQuery->have_posts()) : $recentPostsQuery->the_post(); ?>
                     <div class="homepage-recent-posts__article w-full" data-aos="fade-up" data-aos-delay="<?php echo 50 * $counter; ?>">
-                        <a href="<?php the_permalink(); ?>">
+                        <a href="<?php the_permalink(); ?>" class="focus:outline-none">
                             <div class="homepage-recent-posts__article-img overflow-hidden">
                                 <img data-src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="lazy">
                             </div>

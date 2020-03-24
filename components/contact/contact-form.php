@@ -25,13 +25,13 @@
                             <span class="radio"></span>
                         </label>
                     </div>
-                    <input type="text" placeholder="Nombre" name="name">
-                    <input type="tel" placeholder="Teléfono" name="phone">
-                    <input type="email" placeholder="Correo" name="email">
-                    <textarea placeholder="Mensaje" name="message"></textarea>
+                    <input type="text" placeholder="Nombre" name="name" class="focus:outline-none">
+                    <input type="tel" placeholder="Teléfono" name="phone" class="focus:outline-none">
+                    <input type="email" placeholder="Correo" name="email" class="focus:outline-none">
+                    <textarea placeholder="Mensaje" name="message" class="focus:outline-none"></textarea>
                     <input type="text" name="service">
                     <div class="text-center mt-8">
-                        <button type="submit" class="px-4 tracking-widest">ENVIAR</button>
+                        <button type="submit" class="px-4 tracking-widest" class="focus:outline-none">ENVIAR</button>
                     </div>
                     <div class="contact-form__message text-center pt-4 opacity-0"><span>form message</span></div>
                 </form>
