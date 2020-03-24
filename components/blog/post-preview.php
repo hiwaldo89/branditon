@@ -8,7 +8,7 @@
             <div class="post-preview__col w-full md:w-5/12">
                 <div class="flex flex-wrap post-preview__info h-full">
                     <div class="post-preview__desc w-full lg:w-8/12">
-                        <div class="post-preview__info-inner pt-20 flex flex-col h-full">
+                        <div class="post-preview__info-inner pt-20 flex flex-col h-full md:pb-4 lg:pb-4">
                             <?php $categories = get_the_category(); ?>
                             <div class="post-preview__cat text-center text-lg mb-8 uppercase tracking-widest"><?php echo $categories[0]->name; ?></div>
                             <h3 class="text-center text-2xl mb-4 font-secondary tracking-widest"><?php the_title(); ?></h3>
