@@ -28,7 +28,8 @@ $hamburger-layer-color: #83807f;
 @font-face {
   font-family: 'Calibre';
   src: url('./fonts/Calibre-Medium.woff2') format('woff2'),
-    url('./fonts/Calibre-Medium.woff') format('woff');
+    url('./fonts/Calibre-Medium.woff') format('woff'),
+    url('./fonts/CalibreMedium.otf');
   font-weight: 500;
   font-style: normal;
 }
@@ -36,7 +37,8 @@ $hamburger-layer-color: #83807f;
 @font-face {
   font-family: 'Futura Heavy Italic';
   src: url('./fonts/FuturaBT-HeavyItalic.woff2') format('woff2'),
-    url('./fonts/FuturaBT-HeavyItalic.woff') format('woff');
+    url('./fonts/FuturaBT-HeavyItalic.woff') format('woff'),
+    url('./fonts/FuturaHeavyItalicfont.ttf');
   font-weight: 900;
   font-style: italic;
 }
@@ -44,7 +46,8 @@ $hamburger-layer-color: #83807f;
 @font-face {
   font-family: 'Futura Heavy';
   src: url('./fonts/FuturaBT-Heavy.woff2') format('woff2'),
-    url('./fonts/FuturaBT-Heavy.woff') format('woff');
+    url('./fonts/FuturaBT-Heavy.woff') format('woff'),
+    url('./fonts/FuturaHeavyfont.ttf');
   font-weight: 900;
   font-style: normal;
 }
@@ -52,7 +55,8 @@ $hamburger-layer-color: #83807f;
 @font-face {
   font-family: 'Calibre Italic';
   src: url('./fonts/Calibre-MediumItalic.woff2') format('woff2'),
-    url('./fonts/Calibre-MediumItalic.woff') format('woff');
+    url('./fonts/Calibre-MediumItalic.woff') format('woff'),
+    url('./fonts/CalibreMediumItalic.otf');
   font-weight: 500;
   font-style: italic;
 }
