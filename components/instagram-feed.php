@@ -16,7 +16,7 @@
             $instagramFeed = json_decode($result);
         ?>
         <?php foreach($instagramFeed as $image) : ?>
-            <?php echo $image; ?>
+            <?php var_dump($image) ?>
         <?php endforeach; ?>
     </div>
 </div>
