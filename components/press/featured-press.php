@@ -1,7 +1,7 @@
 <?php $f = new NumberFormatter("es", NumberFormatter::SPELLOUT); ?>
 <div class="featured-press" data-aos="fade-up">
     <a href="<?php the_field('article_link'); ?>" target="_blank" class="flex flex-wrap">
-        <div class="featured-press__img w-full md:w-1/2 lg:w-8/12 relative">
+        <div class="featured-press__img w-full md:w-1/2 lg:w-8/12 relative overflow-hidden">
             <img data-src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="absolute w-full h-full object-cover top-0 left-0 lazy">
         </div>
         <div class="w-full md:w-1/2 lg:w-4/12 featured-press__content text-center flex flex-col justify-center px-12 py-8">

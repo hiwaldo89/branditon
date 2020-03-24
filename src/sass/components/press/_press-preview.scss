@@ -1,5 +1,16 @@
 .press-preview {
+  &:hover {
+    .press-preview__img {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
   .press-preview__img {
+    img {
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+    }
     &:after  {
       content: '';
       display: block;

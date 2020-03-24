@@ -1,5 +1,16 @@
 .featured-press {
+  &:hover {
+    .featured-press__img {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
   .featured-press__img {
+    img {
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+    }
     &:after {
       content: '';
       display: block;
