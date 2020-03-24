@@ -13,7 +13,7 @@
         <nav id="main-navigation" class="mr-3 w-full lg:w-1/2 flex items-center">
             <?php global $post; ?>
             <?php $pageSlug = $post->post_name; ?>
-            <ul class="flex flex-col md:flex-row w-full justify-between">
+            <ul class="flex flex-col lg:flex-row w-full justify-between">
                 <li class="relative">
                     <a href="<?php echo get_permalink(get_page_by_path('about')); ?>" class="text-4xl<?php if($pageSlug == 'about') : ?> active<?php endif; ?>">
                         about
