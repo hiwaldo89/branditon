@@ -18,7 +18,8 @@
         <?php foreach($instagramFeed as $image) : ?>
             <div class="instagram-feed__slide">
                 <a href="<?php echo $image['permalink']; ?>" target="_blank">
-                    <img src="<?php echo $image['media_url']; ?>" alt="<?php echo $image['caption']; ?>">
+                    <img src="<?php echo $image['media_url']; ?>" alt="">
+                    <?php var_dump($image); ?>
                 </a>
             </div>
         <?php endforeach; ?>
